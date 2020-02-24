@@ -90,3 +90,6 @@
 
 - import_playbook: partials/dev/robo3t.yml
   when: my.playbooks.robo3t | bool
+
+- import_playbook: partials/dev/awscli.yml
+  when: my.playbooks.awscli | bool

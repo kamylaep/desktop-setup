@@ -56,6 +56,7 @@ my:
     eclipse: false 
     protobuf: false 
     robo3t: false 
+    awscli: false
 
   tools:
     codestats: ##### CHANGE ME #####
@@ -159,6 +160,10 @@ my:
       version: '3.6.1'
     robo3t:
       version: '1.3.1'
+    awscli: ##### CHANGE ME #####
+      aws_region: 
+      aws_access_key_id: 
+      aws_secret_access_key: 
 
   packages_debian: 
     - baobab

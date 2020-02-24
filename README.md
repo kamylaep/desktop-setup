@@ -62,6 +62,6 @@ $ ./setup.sh
 | Eclipse                               |
 | Protobuf                              |
 | Robo 3T                               |
-
+| AWS Cli                               |
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).

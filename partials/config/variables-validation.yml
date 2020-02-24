@@ -24,3 +24,17 @@
       with_items: 
         - "{{ my.tools.codestats.api_key }}"
       when: my.playbooks.vscode | bool or my.playbooks.intellij | bool
+
+
+    - name: Validating required 'my.data' variables for AWS Cli
+      assert:
+        that:
+          - item is defined
+          - item is not none
+          - item != ""
+        fail_msg: "Verify required variables for my.tools.awscli on the .../group_var/all.yml file"
+      with_items: 
+        - "{{ my.tools.awscli.aws_region }}"
+        - "{{ my.tools.awscli.aws_access_key_id }}"
+        - "{{ my.tools.awscli.aws_secret_access_key }}"
+      when: my.playbooks.awscli | bool
