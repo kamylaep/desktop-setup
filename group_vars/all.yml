@@ -44,7 +44,8 @@ my:
     maven: false 
     golang: false 
     nodejs: false 
-
+    intellij: false
+   
   tools:
     codestats: ##### CHANGE ME #####
       api_key: 
@@ -68,6 +69,91 @@ my:
       path: '$HOME/workspace-go'
     node:
       version: '13.x'
+    intellij:
+      version: '2019.3.3'
+      sha256: 'a71b367f36e528bed8be170a7676372b58b2df1bc572f611194efa4104c4b0d6'
+      default_jdk: '8'
+      plugins:
+        - Docker
+        - org.jetbrains.plugins.go
+        - com.dmarcotte.handlebars
+        - Karma
+        - com.jetbrains.plugins.meteor
+        - NodeJS
+        - Pythonid
+        - org.jetbrains.plugins.ruby
+        - org.intellij.scala
+        - net.codestats.plugin.atom.intellij
+        - com.arasthel.groovy.override-completion
+        - InspectorGroovy
+        - Spock Framework Enhancements
+        - MavenRunHelper
+        - com.dubreuia
+        - Lombook Plugin
+        - Key Promoter X
+        - com.yiycf.plugins.mavenDependencyHelper
+      plugins_disabled:
+        - Ant Tracer Plugin
+        - AntSupport
+        - CFML Support
+        - ClearcasePlugin
+        - CloudBees
+        - CloudFoundry
+        - com.intellij.drools
+        - com.intellij.flex
+        - com.intellij.jboss.arquillian
+        - com.intellij.jboss.core
+        - com.intellij.jbpm
+        - com.intellij.seam
+        - com.intellij.seam.pageflow
+        - com.intellij.seam.pages
+        - com.intellij.struts2
+        - com.intellij.tapestry
+        - com.jetbrains.plugins.asp
+        - CVS
+        - DevKit
+        - Geronimo
+        - GlassFish
+        - hg4idea
+        - J2ME
+        - JBoss
+        - JSR45Plugin
+        - OpenShift
+        - org.jetbrains.plugins.javaFX
+        - org.jetbrains.plugins.rest
+        - PerforceDirectPlugin
+        - Resin
+        - StrutsAssistant
+        - Subversion
+        - TFS
+        - Weblogic
+        - WebSphere
+        - ZKM
+    docker_compose:
+      version: '1.25.0'
+    toggl:
+      version: '7.5.50'
+    google_cloud_sdk:
+      components:
+        - 'google-cloud-sdk'
+        - 'google-cloud-sdk-app-engine-java'
+        - 'google-cloud-sdk-pubsub-emulator'
+    gradle:
+      version: '5.6.2'
+    eclipse:
+      version: '2019-09'
+      edition: 'jee'
+      release: 'R'
+    protobuf:
+      version: '3.6.1'
+    robo3t:
+      version: '1.3.1'
+    awscli: ##### CHANGE ME #####
+      aws_region: 
+      aws_access_key_id: 
+      aws_secret_access_key: 
+    kafkatool:
+      url: http://www.kafkatool.com/download2/kafkatool.sh
 
   packages_debian: 
     - baobab

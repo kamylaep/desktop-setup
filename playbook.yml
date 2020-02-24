@@ -54,3 +54,6 @@
 
 - import_playbook: partials/dev/nodejs.yml
   when: my.playbooks.nodejs | bool
+
+- import_playbook: partials/dev/ides/intellij.yml
+  when: my.playbooks.intellij | bool
