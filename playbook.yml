@@ -51,3 +51,6 @@
 
 - import_playbook: partials/dev/golang.yml
   when: my.playbooks.golang | bool
+
+- import_playbook: partials/dev/nodejs.yml
+  when: my.playbooks.nodejs | bool
