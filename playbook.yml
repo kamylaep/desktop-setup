@@ -76,3 +76,5 @@
 - import_playbook: partials/dev/gradle.yml
   when: my.playbooks.gradle | bool
   
+- import_playbook: partials/dev/editors/atom.yml
+  when: my.playbooks.atom | bool
