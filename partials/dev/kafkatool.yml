@@ -1,0 +1,16 @@
+---
+- hosts: all
+ 
+  tasks:
+    - name: Downloading KAFKATOOL
+      get_url:
+        url: "{{ my.tools.kafkatool.url }}"
+        dest: /tmp
+        mode: '+x'
+
+    - name: Installing KAFKATOOL
+      shell: |
+        export INSTALL4J_JAVA_HOME={{ ansible_local.java_default.general.home }}
+        cd /tmp
+        ./kafkatool.sh
+      become: yes

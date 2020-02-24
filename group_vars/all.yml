@@ -58,6 +58,7 @@ my:
     robo3t: false 
     awscli: false
     redis_desktop_manager: false
+    kafkatool: false
 
   tools:
     codestats: ##### CHANGE ME #####
@@ -165,6 +166,8 @@ my:
       aws_region: 
       aws_access_key_id: 
       aws_secret_access_key: 
+    kafkatool:
+      url: http://www.kafkatool.com/download2/kafkatool.sh
 
   packages_debian: 
     - baobab

@@ -96,3 +96,6 @@
 
 - import_playbook: partials/dev/redis-desktop-manager.yml
   when: my.playbooks.redis_desktop_manager | bool
+
+- import_playbook: partials/dev/kafkatool.yml
+  when: my.playbooks.kafkatool | bool
