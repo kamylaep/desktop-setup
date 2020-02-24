@@ -1,0 +1,18 @@
+---
+- hosts: all
+
+  roles:
+    - role: ../../external-roles/gantsign.oh-my-zsh
+      users:
+        - username: '{{ my.data.username }}'
+          oh_my_zsh:
+            theme: frisk
+            plugins:
+              - gitfast
+              - docker
+              - docker-compose
+              - heroku
+              - helm
+              - kubectl
+              - minikube
+              - mvn

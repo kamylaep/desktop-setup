@@ -35,6 +35,7 @@ my:
     packages: false 
     packages_dpkg: false
     vscode: false
+    ohmyzsh: false 
 
   tools:
     codestats: ##### CHANGE ME #####
