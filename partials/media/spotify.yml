@@ -1,0 +1,16 @@
+- hosts: all
+  become: yes
+  
+  tasks:
+    - name: Adding SPOTIFY repository key
+      apt_key:
+        url: https://download.spotify.com/debian/pubkey.gpg
+      
+    - name: Adding SPOTIFY repository
+      apt_repository:
+        repo: deb http://repository.spotify.com stable non-free
+        state: present
+
+    - name: Installing SPOTIFY
+      package:
+        name: spotify-client

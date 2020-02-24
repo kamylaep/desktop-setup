@@ -45,6 +45,6 @@ $ ./setup.sh
 | Sublime                               |
 | Oh-my-zsh                             |
 | Expressvpn                            |
-
+| Spotify                               |
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).

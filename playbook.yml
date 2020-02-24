@@ -33,3 +33,6 @@
 
 - import_playbook: partials/tools/expressvpn.yml
   when: my.playbooks.expressvpn | bool
+
+- import_playbook: partials/media/spotify.yml
+  when: my.playbooks.spotify | bool

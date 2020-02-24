@@ -37,6 +37,7 @@ my:
     vscode: false
     ohmyzsh: false 
     expressvpn: false 
+    spotify: false
 
   tools:
     codestats: ##### CHANGE ME #####
