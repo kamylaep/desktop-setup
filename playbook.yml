@@ -93,3 +93,6 @@
 
 - import_playbook: partials/dev/awscli.yml
   when: my.playbooks.awscli | bool
+
+- import_playbook: partials/dev/redis-desktop-manager.yml
+  when: my.playbooks.redis_desktop_manager | bool

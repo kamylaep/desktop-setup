@@ -57,6 +57,7 @@ my:
     protobuf: false 
     robo3t: false 
     awscli: false
+    redis_desktop_manager: false
 
   tools:
     codestats: ##### CHANGE ME #####
