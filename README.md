@@ -61,5 +61,7 @@ $ ./setup.sh
 | Sublime                               |
 | Eclipse                               |
 | Protobuf                              |
+| Robo 3T                               |
+
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).

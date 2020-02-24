@@ -87,3 +87,6 @@
 
 - import_playbook: partials/dev/protobuf.yml
   when: my.playbooks.protobuf | bool
+
+- import_playbook: partials/dev/robo3t.yml
+  when: my.playbooks.robo3t | bool
