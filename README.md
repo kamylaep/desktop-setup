@@ -58,5 +58,6 @@ $ ./setup.sh
 | Google Cloud SDK                      |
 | Gradle                                |
 | Atom                                  |
+| Sublime                               |
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).

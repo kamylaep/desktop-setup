@@ -52,6 +52,7 @@ my:
     google_cloud_sdk: false
     gradle: false 
     atom: false
+    sublime: false
 
   tools:
     codestats: ##### CHANGE ME #####

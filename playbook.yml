@@ -78,3 +78,6 @@
   
 - import_playbook: partials/dev/editors/atom.yml
   when: my.playbooks.atom | bool
+
+- import_playbook: partials/dev/editors/sublime.yml
+  when: my.playbooks.sublime | bool
