@@ -60,5 +60,6 @@ $ ./setup.sh
 | Atom                                  |
 | Sublime                               |
 | Eclipse                               |
+| Protobuf                              |
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).

@@ -84,3 +84,6 @@
 
 - import_playbook: partials/dev/ides/eclipse.yml
   when: my.playbooks.eclipse | bool
+
+- import_playbook: partials/dev/protobuf.yml
+  when: my.playbooks.protobuf | bool

@@ -54,6 +54,7 @@ my:
     atom: false
     sublime: false
     eclipse: false 
+    protobuf: false 
 
   tools:
     codestats: ##### CHANGE ME #####
@@ -153,6 +154,8 @@ my:
       version: '2019-09'
       edition: 'jee'
       release: 'R'
+    protobuf:
+      version: '3.6.1'
 
   packages_debian: 
     - baobab
