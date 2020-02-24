@@ -47,6 +47,7 @@ my:
     intellij: false
     pipenv: false
     docker: false 
+    vitualbox: false 
 
   tools:
     codestats: ##### CHANGE ME #####
