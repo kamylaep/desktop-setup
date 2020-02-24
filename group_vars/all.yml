@@ -1,0 +1,12 @@
+---
+my:
+  data:
+    # REQUIRED: used by the git playbook
+    fullname: 
+    # REQUIRED: used by atom, vscode, intellij, sshkey and oh-my_zsh playbooks
+    username: 
+    # REQUIRED: used by the git and sshkey playbook
+    email: 
+
+  playbooks: 
+    sshkey: false 

@@ -1,0 +1,5 @@
+---
+- import_playbook: partials/config/variables-validation.yml
+
+- import_playbook: partials/personal/sshkey.yml
+  when: my.playbooks.sshkey | bool

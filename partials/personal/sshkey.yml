@@ -1,0 +1,28 @@
+---
+- hosts: all
+  vars:
+    ssh_dir: '/home/{{ my.data.username }}/.ssh'
+
+  tasks:
+    - name: Creating .ssh dir
+      file:
+        path: '{{ ssh_dir }}'
+        state: directory
+        owner: '{{ my.data.username }}'
+        group: '{{ my.data.username }}'
+        
+    - name: Generating SSH-KEY
+      openssh_keypair:
+        comment: '{{ my.data.email }}'
+        group: '{{ my.data.username }}'
+        owner: '{{ my.data.username }}'
+        path: '{{ ssh_dir }}/id_rsa'
+        size: 4096
+        state: present
+        type: rsa
+      register: ssh_key
+
+    - name: Adding SSH-KEY
+      shell: eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa
+      become: yes
+      become_user: '{{ my.data.username }}'
