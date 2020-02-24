@@ -22,5 +22,20 @@ $ ./setup.sh
 | Display manager                       |
 | Keyboard shortcuts                    |
 | Autolock                              |
+| Baobab                                |
+| Caja                                  |
+| Chromium-browser                      |
+| Firefox                               |
+| Flameshot                             |
+| Htop                                  |
+| Keepassxc                             |
+| Pip3                                  |
+| Remmina                               |
+| Rerminator                            |
+| Transmission                          |
+| Vim                                   |
+| Vlc                                   |
+| Zsh                                   |
+
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).

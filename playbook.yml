@@ -18,3 +18,6 @@
 
 - import_playbook: partials/config/xfce4/autolock.yml
   when: my.playbooks.autolock | bool
+
+- import_playbook: partials/package-manager/packages.yml
+  when: my.playbooks.packages | bool

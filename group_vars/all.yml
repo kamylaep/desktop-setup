@@ -32,4 +32,21 @@ my:
     display_manager: false
     keyboard_shortcuts: false
     autolock: false
-    
+    packages: false 
+
+  packages_debian: 
+    - baobab
+    - caja
+    - chromium-browser
+    - firefox
+    - flameshot
+    - htop
+    - keepassxc
+    - python3-pip
+    - remmina
+    - terminator
+    - transmission
+    - vim
+    - vlc
+    - zsh
+  
