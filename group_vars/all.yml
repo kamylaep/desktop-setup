@@ -33,6 +33,7 @@ my:
     keyboard_shortcuts: false
     autolock: false
     packages: false 
+    packages_dpkg: false
 
   packages_debian: 
     - baobab
@@ -50,3 +51,7 @@ my:
     - vlc
     - zsh
   
+  packages_dpkg:
+    - https://www.scootersoftware.com/bcompare-4.3.2.24472_amd64.deb
+    - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
+    - https://download.nomachine.com/download/6.9/Linux/nomachine_6.9.2_1_amd64.deb

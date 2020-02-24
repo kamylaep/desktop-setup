@@ -21,3 +21,6 @@
 
 - import_playbook: partials/package-manager/packages.yml
   when: my.playbooks.packages | bool
+
+- import_playbook: partials/package-manager/packages_dpkg.yml
+  when: my.playbooks.packages_dpkg | bool
