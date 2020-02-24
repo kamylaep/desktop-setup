@@ -2,13 +2,13 @@
 
 Collection of playbooks and roles used to setup a linux (Xubuntu) desktop environment.
 
-## Before execute
+## Before executing
 
-Go to the [configuration file](group_vars/all.yml) and fill the required variables, also, check/uncheck what you want to install.
+Go to the [configuration file](group_vars/all.yml) and fill in the required variables. Also, check/uncheck what you want to install.
 
 ## How to execute
 
-```bash
+```shell script
 $ ./setup.sh
 ```
 
