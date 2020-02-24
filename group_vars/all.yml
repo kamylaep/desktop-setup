@@ -31,3 +31,5 @@ my:
     wallpaper: false
     display_manager: false
     keyboard_shortcuts: false
+    autolock: false
+    

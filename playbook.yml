@@ -15,3 +15,6 @@
 
 - import_playbook: partials/config/xfce4/keyboard-shortcuts.yml
   when: my.playbooks.keyboard_shortcuts | bool
+
+- import_playbook: partials/config/xfce4/autolock.yml
+  when: my.playbooks.autolock | bool
