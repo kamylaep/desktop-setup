@@ -36,10 +36,13 @@ my:
     packages_dpkg: false
     vscode: false
     ohmyzsh: false 
+    expressvpn: false 
 
   tools:
     codestats: ##### CHANGE ME #####
       api_key: 
+    expressvpn:
+      version: 2.4.2-1
 
   packages_debian: 
     - baobab

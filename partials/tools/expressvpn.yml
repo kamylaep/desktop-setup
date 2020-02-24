@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    - expressvpn_url: "https://download.expressvpn.xyz/clients/linux"
+    - expressvpn_debian_package: "expressvpn_{{ my.tools.expressvpn.version }}_amd64.deb"
+
+  tasks:
+    - name: Installing EXPRESSVPN
+      apt:
+        deb: "{{ expressvpn_url }}/{{ expressvpn_debian_package }}"

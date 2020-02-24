@@ -44,5 +44,7 @@ $ ./setup.sh
 | Atom                                  |
 | Sublime                               |
 | Oh-my-zsh                             |
+| Expressvpn                            |
+
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).

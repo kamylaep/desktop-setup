@@ -30,3 +30,6 @@
 
 - import_playbook: partials/shell/oh-my-zsh.yml
   when: my.playbooks.ohmyzsh | bool
+
+- import_playbook: partials/tools/expressvpn.yml
+  when: my.playbooks.expressvpn | bool
