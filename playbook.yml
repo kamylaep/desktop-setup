@@ -70,3 +70,6 @@
 - import_playbook: partials/tools/toggl.yml
   when: my.playbooks.toggl | bool
   
+- import_playbook: partials/dev/google-cloud-sdk.yml
+  when: my.playbooks.google_cloud_sdk | bool
+  

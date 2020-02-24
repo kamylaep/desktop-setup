@@ -49,6 +49,7 @@ my:
     docker: false 
     vitualbox: false 
     toggl: false
+    google_cloud_sdk: false
 
   tools:
     codestats: ##### CHANGE ME #####
@@ -137,6 +138,11 @@ my:
       version: '1.25.0'
     toggl:
       version: '7.5.50'
+    google_cloud_sdk:
+      components:
+        - 'google-cloud-sdk'
+        - 'google-cloud-sdk-app-engine-java'
+        - 'google-cloud-sdk-pubsub-emulator'
 
   packages_debian: 
     - baobab
