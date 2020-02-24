@@ -57,3 +57,6 @@
 
 - import_playbook: partials/dev/ides/intellij.yml
   when: my.playbooks.intellij | bool
+
+- import_playbook: partials/dev/pipenv.yml
+  when: my.playbooks.pipenv | bool

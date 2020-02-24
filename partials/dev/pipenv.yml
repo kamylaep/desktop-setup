@@ -1,0 +1,28 @@
+---
+- hosts: all
+  vars:
+    - pipenv_package: get-pipenv.py
+    - pipenv_url: "https://raw.githubusercontent.com/kennethreitz/pipenv/master/{{ pipenv_package }}"
+    - home_path: "/usr/local/eclipse"
+    - home_name: "PIPENV_HOME"
+    - extras: export PIPENV_VENV_IN_PROJECT=1
+
+  tasks:
+    - name: Downloading PIPENV installation script
+      get_url:
+        url: "{{ pipenv_url }}"
+        dest: "/tmp"
+    
+    - name: Installing PIPENV 
+      shell: "python /tmp/{{ pipenv_package }}"
+      become: yes
+
+    - name: Exporting PIPENV_HOME and adding to PATH
+      template:
+        src: ../../templates/init-no-path.sh.j2
+        dest: /etc/profile.d/pipenv.sh
+        backup: yes
+        owner: root
+        group: root
+        mode: 'u=rw,g=r,o=r'
+      become: yes

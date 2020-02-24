@@ -45,7 +45,8 @@ my:
     golang: false 
     nodejs: false 
     intellij: false
-   
+    pipenv: false
+  
   tools:
     codestats: ##### CHANGE ME #####
       api_key: 
