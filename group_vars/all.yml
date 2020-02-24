@@ -10,3 +10,5 @@ my:
 
   playbooks: 
     sshkey: false 
+    ssh: false
+ 

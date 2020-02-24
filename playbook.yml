@@ -3,3 +3,6 @@
 
 - import_playbook: partials/personal/sshkey.yml
   when: my.playbooks.sshkey | bool
+
+- import_playbook: partials/tools/ssh.yml
+  when: my.playbooks.ssh | bool

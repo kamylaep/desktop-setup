@@ -1,0 +1,33 @@
+---
+- hosts: all
+  become: yes
+  
+  tasks:
+    - name: Configuring SSH client keep alive
+      lineinfile:
+        path: /etc/ssh/ssh_config
+        line: "    ServerAliveInterval 100"
+    
+    - name: Installing SSH server
+      package:
+        name: openssh-server
+        update-cache: yes
+        autoclean: yes
+
+    - name: Enabling SSH service
+      service:
+        name: ssh
+        enabled: yes
+
+    - name: Starting SSH service
+      service:
+        name: ssh
+        state: started
+
+    - name: Configuring SSH server keep alive 
+      blockinfile:
+        path: /etc/ssh/sshd_config
+        block: |
+          ClientAliveInterval 60
+          TCPKeepAlive yes
+          ClientAliveCountMax 10000
