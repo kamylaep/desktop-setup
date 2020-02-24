@@ -39,6 +39,7 @@ my:
     expressvpn: false 
     spotify: false
     java: false 
+    git: false 
 
   tools:
     codestats: ##### CHANGE ME #####

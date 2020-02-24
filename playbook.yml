@@ -39,3 +39,6 @@
 
 - import_playbook: partials/dev/java.yml
   when: my.playbooks.java | bool
+
+- import_playbook: partials/dev/git.yml
+  when: my.playbooks.git | bool
