@@ -9,9 +9,13 @@ my:
     email: 
   os: 
     wallpaper_name: falcon.jpg
+    greeter_background_name: soyuz.jpg
+    lock_after: 30
+  
 
   playbooks: 
     sshkey: false 
     ssh: false
     wallpaper: false
+    display_manager: false
     

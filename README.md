@@ -19,6 +19,6 @@ $ ./setup.sh
 | SSH key (1)                           |
 | SSH client/server                     |
 | Wallpaper configuration               |
-
+| Display manager                       |
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).
