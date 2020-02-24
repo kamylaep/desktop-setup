@@ -81,3 +81,6 @@
 
 - import_playbook: partials/dev/editors/sublime.yml
   when: my.playbooks.sublime | bool
+
+- import_playbook: partials/dev/ides/eclipse.yml
+  when: my.playbooks.eclipse | bool
