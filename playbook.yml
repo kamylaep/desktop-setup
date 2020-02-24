@@ -60,3 +60,6 @@
 
 - import_playbook: partials/dev/pipenv.yml
   when: my.playbooks.pipenv | bool
+
+- import_playbook: partials/dev/docker.yml
+  when: my.playbooks.docker | bool
