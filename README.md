@@ -12,58 +12,58 @@ Go to the [configuration file](group_vars/all.yml) and fill the required variabl
 $ ./setup.sh
 ```
 
-## What can be installed
+## What can be installed / configured
 
-| Tool                                  |
-| :---                                  |
-| SSH key (1)                           |
-| SSH client/server                     |
-| Wallpaper configuration               |
-| Display manager                       |
-| Keyboard shortcuts                    |
-| Autolock                              |
-| Baobab                                |
-| Caja                                  |
-| Chromium-browser                      |
-| Firefox                               |
-| Flameshot                             |
-| Htop                                  |
-| Keepassxc                             |
-| Pip3                                  |
-| Remmina                               |
-| Rerminator                            |
-| Transmission                          |
-| Vim                                   |
-| Vlc                                   |
-| Zsh                                   |
-| Beyond Compare                        |
-| Dropbox                               |
-| NoMachine                             |
-| Vscode                                |
-| Oh-my-zsh                             |
-| Expressvpn                            |
-| Spotify                               |
-| Java                                  |
-| Git                                   |
-| Tig                                   |
-| Maven                                 |
-| Golang                                |
-| NodeJs                                |
-| Intellij                              |
-| Pipenv                                |
-| Docker                                |
-| Docker compose                        |
-| Virtualbox                            |
-| Toggl                                 |
-| Google Cloud SDK                      |
-| Gradle                                |
-| Atom                                  |
-| Sublime                               |
-| Eclipse                               |
-| Protobuf                              |
-| Robo 3T                               |
-| AWS Cli                               |
-| Redis Desktop Manager                 |
-| Kafkatool                             |
+| Tool                    |
+| :---                    |
+| Atom                    |
+| Autolock                |
+| AWS Cli                 |
+| Baobab                  |
+| Beyond Compare          |
+| Caja                    |
+| Chromium-browser        |
+| Display manager         |
+| Docker                  |
+| Docker compose          |
+| Dropbox                 |
+| Eclipse                 |
+| Expressvpn              |
+| Firefox                 |
+| Flameshot               |
+| Git                     |
+| Golang                  |
+| Google Cloud SDK        |
+| Gradle                  |
+| Htop                    |
+| Intellij                |
+| Java                    |
+| Kafkatool               |
+| Keepassxc               |
+| Keyboard shortcuts      |
+| Maven                   |
+| NodeJs                  |
+| NoMachine               |
+| Oh-my-zsh               |
+| Pip3                    |
+| Pipenv                  |
+| Protobuf                |
+| Redis Desktop Manager   |
+| Remmina                 |
+| Robo 3T                 |
+| Spotify                 |
+| SSH client/server       |
+| SSH key (1)             |
+| Sublime                 |
+| Terminator              |
+| Tig                     |
+| Toggl                   |
+| Transmission            |
+| Vim                     |
+| Virtualbox              |
+| Vlc                     |
+| Vscode                  |
+| Wallpaper configuration |
+| Zsh                     |
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).
