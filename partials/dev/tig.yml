@@ -1,0 +1,42 @@
+---
+  - hosts: all
+    vars:
+      - tig_package: "tig-{{ my.tools.tig.version }}"
+      - tig_url: "https://github.com/jonas/tig/releases/download/tig-{{ my.tools.tig.version }}/{{ tig_package }}.tar.gz"
+      - home_path: "/usr/local"
+      - home_name: "TIG_HOME"
+  
+    tasks:
+      - name: Downloading TIG
+        get_url:
+          url: "{{ tig_url }}"
+          dest: '/tmp'
+    
+      - name: Create temp TIG directory
+        file:
+          path: "/tmp/{{ tig_package }}"
+          state: directory
+
+      - name: Unzipping TIG
+        unarchive:
+          src: "/tmp/{{ tig_package }}.tar.gz"
+          extra_opts:
+            - "--strip-components=1"
+          dest: "/tmp/{{ tig_package }}"
+          remote_src: true
+     
+      - name: Installing ncurses/ncursesw
+        package:
+          name: "{{ item }}"
+        with_items:
+          - libncurses5-dev
+          - libncursesw5-dev
+        become: yes
+        
+      - name: Make install TIG
+        make:
+          chdir: "/tmp/{{ tig_package }}"
+          target: install
+          params: 
+            prefix: "{{ home_path }}"
+        become: yes

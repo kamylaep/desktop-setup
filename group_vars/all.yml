@@ -40,6 +40,7 @@ my:
     spotify: false
     java: false 
     git: false 
+    tig: false
 
   tools:
     codestats: ##### CHANGE ME #####
@@ -54,6 +55,8 @@ my:
         - name: latest # DO NOT CHANGE THE NAME, USED BY INTELLIJ
           version: '13'
           default: no
+    tig:
+      version: '2.5.0'
 
   packages_debian: 
     - baobab
