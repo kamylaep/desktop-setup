@@ -48,6 +48,7 @@ my:
     pipenv: false
     docker: false 
     vitualbox: false 
+    toggl: false
 
   tools:
     codestats: ##### CHANGE ME #####
@@ -134,6 +135,8 @@ my:
         - ZKM
     docker_compose:
       version: '1.25.0'
+    toggl:
+      version: '7.5.50'
 
   packages_debian: 
     - baobab
