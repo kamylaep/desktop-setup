@@ -87,6 +87,8 @@ my:
       version: '2019.3.3'
       sha256: 'a71b367f36e528bed8be170a7676372b58b2df1bc572f611194efa4104c4b0d6'
       default_jdk: '8'
+      style_guide_name: GoogleStyle - Custom
+      style_guide_path: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
       plugins:
         - Docker
         - org.jetbrains.plugins.go
