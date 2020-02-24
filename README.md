@@ -49,6 +49,6 @@ $ ./setup.sh
 | Java                                  |
 | Git                                   |
 | Tig                                   |
-
+| Maven                                 |
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).

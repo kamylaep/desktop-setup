@@ -1,0 +1,17 @@
+---
+- hosts: all
+  
+  roles:
+    - role: ../../external-roles/gantsign.maven
+      maven_version: "{{ my.tools.maven.version }}"
+
+  tasks:
+
+    - name: Configuring Maven
+      template:
+        src: ../../templates/maven-settings.xml.j2
+        dest: "/opt/maven/apache-maven-{{ my.tools.maven.version }}/conf/settings.xml"
+        backup: yes
+        owner: root
+        group: root
+      become: yes
