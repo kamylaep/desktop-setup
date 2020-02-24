@@ -1,0 +1,57 @@
+---
+- hosts: all
+  roles:
+    - role: ../../../external-roles/gantsign.visual-studio-code
+      users:
+        - username: '{{ my.data.username }}'
+          visual_studio_code_settings: {
+              'codestats.username': '{{ my.data.username }}',
+              'codestats.apikey': '{{ my.tools.codestats.api_key }}',
+              'cSpell.language': 'en,pt,pt_BR',
+              'cSpell.diagnosticLevel': 'Warning',
+              'editor.minimap.enabled': 'false',
+              'editor.suggestSelection': 'first',
+              'editor.tabSize': '2',
+              'eslint.validate': [
+                  {
+                      'autoFix': false,
+                      'language': 'vue'
+                  },
+                  {
+                      'autoFix': false,
+                      'language': 'javascript'
+                  }
+              ],
+              'emmet.triggerExpansionOnTab': true,
+              'java.configuration.checkProjectSettingsExclusions': false,
+              'javascript.preferences.quoteStyle': 'single',
+              'prettier.jsxSingleQuote': true,
+              'prettier.singleQuote': true,
+              'typescript.preferences.quoteStyle': 'single',
+              'vetur.format.defaultFormatterOptions': {
+                  'prettier': {
+                      'singleQuote': true
+                  }
+              },
+              'vsintellicode.modify.editor.suggestSelection': 'automaticallyOverrodeDefaultValue',
+              'workbench.colorTheme': 'Default Light+',
+              'workbench.editor.enablePreview': false,
+              'workbench.startupEditor': 'newUntitledFile',
+          }
+          visual_studio_code_extensions:
+            - dbaeumer.vscode-eslint
+            - eamodio.gitlens
+            - eg2.vscode-npm-script
+            - esbenp.prettier-vscode
+            - ms-azuretools.vscode-docker
+            - ms-python.python
+            - ms-vscode.go
+            - octref.vetur
+            - vscjava.vscode-java-pack
+            - riussi.code-stats-vscode
+            - streetsidesoftware.code-spell-checker
+            - shd101wyy.markdown-preview-enhanced
+            - streetsidesoftware.code-spell-checker-portuguese-brazilian
+            - yzhang.markdown-all-in-one
+            - vscoss.vscode-ansible
+

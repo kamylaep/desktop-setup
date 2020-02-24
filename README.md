@@ -39,5 +39,7 @@ $ ./setup.sh
 | Beyond Compare                        |
 | Dropbox                               |
 | NoMachine                             |
+| Vscode                                |
+
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).

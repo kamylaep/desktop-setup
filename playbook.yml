@@ -24,3 +24,6 @@
 
 - import_playbook: partials/package-manager/packages_dpkg.yml
   when: my.playbooks.packages_dpkg | bool
+
+- import_playbook: partials/dev/editors/vscode.yml
+  when: my.playbooks.vscode | bool
