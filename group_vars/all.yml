@@ -42,6 +42,8 @@ my:
     git: false 
     tig: false
     maven: false 
+    golang: false 
+    
 
   tools:
     codestats: ##### CHANGE ME #####
@@ -60,6 +62,10 @@ my:
       version: '2.5.0'
     maven:
       version: '3.6.1'
+    golang:
+      version: '1.13.4'
+      sha256sum: '692d17071736f74be04a72a06dab9cac1cd759377bd85316e52b2227604c004c'
+      path: '$HOME/workspace-go'
 
   packages_debian: 
     - baobab
