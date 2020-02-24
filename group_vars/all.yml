@@ -11,11 +11,23 @@ my:
     wallpaper_name: falcon.jpg
     greeter_background_name: soyuz.jpg
     lock_after: 30
-  
+    keyboard_shortcuts:
+      - shortcut: "<Alt><Super>Down"
+        action: "amixer set Master 5%-"
+      - shortcut: "<Alt><Super>Up"
+        action: "amixer set Master 5%+"
+      - shortcut: "<Alt><Super>Right"
+        action: "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+      - shortcut: "<Alt><Super>Left"
+        action: "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+      - shortcut: "<Alt><Super>Return"
+        action: "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+      - shortcut: "<Super>l"
+        action: "xflock4"
 
   playbooks: 
     sshkey: false 
     ssh: false
     wallpaper: false
     display_manager: false
-    
+    keyboard_shortcuts: false

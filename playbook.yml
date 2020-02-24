@@ -12,3 +12,6 @@
 
 - import_playbook: partials/config/xfce4/display-manager.yml
   when: my.playbooks.display_manager | bool
+
+- import_playbook: partials/config/xfce4/keyboard-shortcuts.yml
+  when: my.playbooks.keyboard_shortcuts | bool
