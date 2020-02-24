@@ -46,5 +46,6 @@ $ ./setup.sh
 | Oh-my-zsh                             |
 | Expressvpn                            |
 | Spotify                               |
+| Java                                  |
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).

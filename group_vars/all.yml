@@ -38,12 +38,21 @@ my:
     ohmyzsh: false 
     expressvpn: false 
     spotify: false
+    java: false 
 
   tools:
     codestats: ##### CHANGE ME #####
       api_key: 
     expressvpn:
       version: 2.4.2-1
+    java: 
+      versions:
+        - name: default # DO NOT CHANGE THE NAME, USED BY INTELLIJ
+          version: '8'
+          default: yes
+        - name: latest # DO NOT CHANGE THE NAME, USED BY INTELLIJ
+          version: '13'
+          default: no
 
   packages_debian: 
     - baobab

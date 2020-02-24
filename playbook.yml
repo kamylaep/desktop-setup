@@ -36,3 +36,6 @@
 
 - import_playbook: partials/media/spotify.yml
   when: my.playbooks.spotify | bool
+
+- import_playbook: partials/dev/java.yml
+  when: my.playbooks.java | bool
