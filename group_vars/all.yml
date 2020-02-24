@@ -7,8 +7,11 @@ my:
     username: 
     # REQUIRED: used by the git and sshkey playbook
     email: 
+  os: 
+    wallpaper_name: falcon.jpg
 
   playbooks: 
     sshkey: false 
     ssh: false
- 
+    wallpaper: false
+    
