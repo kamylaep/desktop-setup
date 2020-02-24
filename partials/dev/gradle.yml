@@ -1,0 +1,30 @@
+---
+- hosts: all
+  vars:
+    - gradle_package: "gradle-{{ my.tools.gradle.version }}-bin.zip"
+    - gradle_url: "https://services.gradle.org/distributions/{{ gradle_package }}"
+    - home_path: "/opt/gradle-{{ my.tools.gradle.version }}"
+    - home_name: "GRADLE_HOME"
+  
+  tasks:
+    - name: Downloading GRADLE
+      get_url:
+        url: "{{ gradle_url }}"
+        dest: '/tmp'
+
+    - name: Unzipping GRADLE
+      unarchive:
+        src: "/tmp/{{ gradle_package }}"
+        dest: /opt
+        remote_src: true
+      become: yes
+
+    - name: export GRADLE_HOME and add to PATH
+      template:
+        src: ../../templates/init.sh.j2
+        dest: /etc/profile.d/gradle.sh
+        backup: yes
+        owner: root
+        group: root
+        mode: 'u=rw,go=r'
+      become: yes

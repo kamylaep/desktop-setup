@@ -1,0 +1,6 @@
+#!/bin/sh
+
+{{ ansible_managed | comment }}
+
+export {{ home_name }}="{{ home_path }}"
+export PATH=$PATH:${{ home_name }}

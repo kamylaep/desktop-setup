@@ -50,6 +50,7 @@ my:
     vitualbox: false 
     toggl: false
     google_cloud_sdk: false
+    gradle: false 
 
   tools:
     codestats: ##### CHANGE ME #####
@@ -143,8 +144,10 @@ my:
         - 'google-cloud-sdk'
         - 'google-cloud-sdk-app-engine-java'
         - 'google-cloud-sdk-pubsub-emulator'
+    gradle:
+      version: '5.6.2'
 
-  packages_debian: 
+    packages_debian: 
     - baobab
     - caja
     - chromium-browser
