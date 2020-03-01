@@ -70,9 +70,9 @@ my:
         - name: default # DO NOT CHANGE THE NAME, USED BY INTELLIJ
           version: '8'
           default: yes
-        - name: latest # DO NOT CHANGE THE NAME, USED BY INTELLIJ
-          version: '13'
-          default: no
+        # - name: latest 
+        #   version: '13'
+        #   default: no
     tig:
       version: '2.5.0'
     maven:

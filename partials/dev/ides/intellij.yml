@@ -13,8 +13,8 @@
           intellij_jdks: 
             - name: '8'
               home: '{{ ansible_local.java_default.general.home }}'
-            - name: '13'
-              home: '{{ ansible_local.java_latest.general.home }}'
+            # - name: '13'
+            #   home: '{{ ansible_local.java_latest.general.home }}'
           intellij_default_jdk: '{{ my.tools.intellij.default_jdk }}'
           intellij_plugins: '{{ my.tools.intellij.plugins }}'
           intellij_disabled_plugins: '{{ my.tools.intellij.plugins_disabled }}'
