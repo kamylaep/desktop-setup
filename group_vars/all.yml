@@ -150,10 +150,8 @@ my:
     toggl:
       version: '7.5.50'
     google_cloud_sdk:
-      components:
-        - 'google-cloud-sdk'
-        - 'google-cloud-sdk-app-engine-java'
-        - 'google-cloud-sdk-pubsub-emulator'
+      version: '282.0.0'
+      components: pubsub-emulator app-engine-java beta
     gradle:
       version: '5.6.2'
     eclipse:

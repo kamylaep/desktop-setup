@@ -1,28 +1,28 @@
 ---
 - hosts: all
-  become: yes
+  vars:
+    - gcsdk_package: "google-cloud-sdk-{{ my.tools.google_cloud_sdk.version }}-linux-x86_64.tar.gz"
+    - gcsdk_url: "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/{{ gcsdk_package }}"
+    - home_root: "/home/{{ my.data.username }}"
+    - home_path: "{{ home_root }}/google-cloud-sdk"
 
   tasks:
-    - name: Add Cloud SDK distribution URI 
-      shell: echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+    - name: Downloading GOOGLE CLOUD SDK
+      get_url:
+        url: "{{ gcsdk_url }}"
+        dest: '/tmp'
 
-    - name: Install dependencies
-      package:
-        name: "{{ item }}"
-        state: latest
-      with_items:
-        - apt-transport-https
-        - ca-certificates
-        - gnupg
-
-    - name: Installing Cloud SDK key
-      apt_key:
-        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg 
-        keyring: /usr/share/keyrings/cloud.google.gpg
-        state: present
-
-    - name: Installing Cloud SDK
-      apt:
-        name: "{{ my.tools.google_cloud_sdk.components }}"
-        state: latest
-        update_cache: yes
+    - name: Unzipping GOOGLE CLOUD SDK
+      unarchive:
+        src: "/tmp/{{ gcsdk_package }}"
+        dest: "{{ home_root }}"
+        remote_src: true
+    
+    - name: Installing GOOGLE CLOUD SDK
+      shell: |
+        {{ home_path }}/install.sh \
+        --usage-reporting false \
+        --rc-path /home/{{ my.data.username }}/.zshrc \
+        --command-completion true \
+        --path-update true \
+        --additional-components {{ my.tools.google_cloud_sdk.components }}
