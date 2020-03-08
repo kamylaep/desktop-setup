@@ -152,7 +152,7 @@ my:
         - WebSphere
         - ZKM
     docker_compose:
-      version: '1.25.0'
+      version: '1.25.4'
     toggl:
       version: '7.5.50'
     google_cloud_sdk:
