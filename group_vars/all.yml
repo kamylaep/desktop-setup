@@ -77,7 +77,7 @@ my:
     tig:
       version: '2.5.0'
     maven:
-      version: '3.6.1'
+      version: '3.6.3'
     bazel:
       version: '2.2.0'
       sha256: 'sha256:b2f002ea0e6194a181af6ac84cd94bd8dc797722eb2354690bebac92dda233ff'
