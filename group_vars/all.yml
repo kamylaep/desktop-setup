@@ -161,7 +161,7 @@ my:
     gradle:
       version: '5.6.2'
     eclipse:
-      version: '2019-09'
+      version: '2019-12'
       edition: 'jee'
       release: 'R'
     protobuf:
