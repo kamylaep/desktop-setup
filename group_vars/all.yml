@@ -51,6 +51,7 @@ my:
     vitualbox: false 
     toggl: false
     google_cloud_sdk: false
+    sdkman: false
     gradle: false 
     atom: false
     sublime: false

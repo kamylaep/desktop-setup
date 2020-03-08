@@ -76,6 +76,9 @@
 - import_playbook: partials/dev/google-cloud-sdk.yml
   when: my.playbooks.google_cloud_sdk | bool
   
+- import_playbook: partials/dev/sdkman.yml
+  when: my.playbooks.sdkman | bool
+
 - import_playbook: partials/dev/gradle.yml
   when: my.playbooks.gradle | bool
   
