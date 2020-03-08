@@ -106,7 +106,7 @@ my:
         - net.codestats.plugin.atom.intellij
         - com.arasthel.groovy.override-completion
         - InspectorGroovy
-        - Spock Framework Enhancements
+        #- Spock Framework Enhancements
         - MavenRunHelper
         - com.dubreuia
         - Lombook Plugin
