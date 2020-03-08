@@ -49,6 +49,9 @@
 - import_playbook: partials/dev/maven.yml
   when: my.playbooks.maven | bool
 
+- import_playbook: partials/dev/bazel.yml
+  when: my.playbooks.bazel | bool
+
 - import_playbook: partials/dev/golang.yml
   when: my.playbooks.golang | bool
 

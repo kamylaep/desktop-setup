@@ -42,6 +42,7 @@ my:
     git: false 
     tig: false
     maven: false 
+    bazel: false
     golang: false 
     nodejs: false 
     intellij: false
@@ -77,6 +78,9 @@ my:
       version: '2.5.0'
     maven:
       version: '3.6.1'
+    bazel:
+      version: '2.2.0'
+      sha256: 'sha256:b2f002ea0e6194a181af6ac84cd94bd8dc797722eb2354690bebac92dda233ff'
     golang:
       version: '1.13.4'
       sha256sum: '692d17071736f74be04a72a06dab9cac1cd759377bd85316e52b2227604c004c'
@@ -108,6 +112,8 @@ my:
         - Lombook Plugin
         - Key Promoter X
         - com.yiycf.plugins.mavenDependencyHelper
+        - com.octogog.idea.bazel-build-formatter
+        - com.google.idea.bazel.ijwb
       plugins_disabled:
         - Ant Tracer Plugin
         - AntSupport

@@ -20,6 +20,7 @@ $ ./setup.sh
 | Autolock                |
 | AWS Cli                 |
 | Baobab                  |
+| Bazel                   |
 | Beyond Compare          |
 | Caja                    |
 | Chromium-browser        |
