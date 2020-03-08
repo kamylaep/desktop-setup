@@ -65,7 +65,7 @@ my:
     codestats: ##### CHANGE ME #####
       api_key: 
     expressvpn:
-      version: 2.4.2-1
+      version: 2.4.4.19-1
     java: 
       versions:
         - name: default # DO NOT CHANGE THE NAME, USED BY INTELLIJ
