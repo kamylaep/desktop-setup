@@ -82,8 +82,8 @@ my:
       version: '2.2.0'
       sha256: 'sha256:b2f002ea0e6194a181af6ac84cd94bd8dc797722eb2354690bebac92dda233ff'
     golang:
-      version: '1.13.4'
-      sha256sum: '692d17071736f74be04a72a06dab9cac1cd759377bd85316e52b2227604c004c'
+      version: '1.14'
+      sha256sum: '08df79b46b0adf498ea9f320a0f23d6ec59e9003660b4c9c1ce8e5e2c6f823ca'
       path: '$HOME/workspace-go'
     node:
       version: '13.x'
