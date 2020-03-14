@@ -197,3 +197,4 @@ my:
     - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
     - https://download.nomachine.com/download/6.9/Linux/nomachine_6.9.2_1_amd64.deb
     - https://downloads.slack-edge.com/linux_releases/slack-desktop-4.3.2-amd64.deb
+    - https://release.gitkraken.com/linux/gitkraken-amd64.deb
