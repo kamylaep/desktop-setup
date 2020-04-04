@@ -16,3 +16,14 @@
               - kubectl
               - minikube
               - mvn
+              - ansible
+              - golang
+              - gradle
+              - node
+              - npm
+              - npx
+              - pip
+              - pipenv
+              - python
+              - tig
+              - virtualenv
