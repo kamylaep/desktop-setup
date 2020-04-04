@@ -34,3 +34,6 @@
         src: '{{ bazel_install_path }}'
         dest: '{{ bazel_link_path }}'
         state: link
+
+    - name: Install BUILDOZER
+      shell: go get github.com/bazelbuild/buildtools/buildozer

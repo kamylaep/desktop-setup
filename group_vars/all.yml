@@ -42,9 +42,9 @@ my:
     git: false 
     tig: false
     maven: false 
-    bazel: false
     golang: false 
     nodejs: false 
+    bazel: false
     intellij: false
     pipenv: false
     docker: false 
