@@ -36,4 +36,4 @@
         state: link
 
     - name: Install BUILDOZER
-      shell: go get github.com/bazelbuild/buildtools/buildozer
+      shell: "/opt/go/{{ my.tools.golang.version }}/bin/go get github.com/bazelbuild/buildtools/buildozer"
