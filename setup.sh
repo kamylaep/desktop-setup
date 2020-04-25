@@ -9,8 +9,9 @@ echo "----------> Installing ansible dependencies"
 sudo apt-get update
 sudo apt-get install -y software-properties-common
 
-echo "----------> Adding ansible repositository"
-sudo apt-add-repository -y ppa:ansible/ansible
+#use only before 20.04
+#echo "----------> Adding ansible repositository"
+#sudo apt-add-repository -y ppa:ansible/ansible
 
 echo "----------> Installing ansible"
 sudo apt-get update
