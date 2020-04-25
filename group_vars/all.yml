@@ -48,7 +48,6 @@ my:
     intellij: false
     pipenv: false
     docker: false 
-    vitualbox: false 
     toggl: false
     google_cloud_sdk: false
     sdkman: false
@@ -192,6 +191,7 @@ my:
     - vlc
     - zsh
     - usb-creator-gtk
+    - virtualbox
   
   packages_dpkg:
     - https://www.scootersoftware.com/bcompare-4.3.3.24545_amd64.deb

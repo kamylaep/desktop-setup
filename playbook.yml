@@ -67,9 +67,6 @@
 - import_playbook: partials/dev/docker.yml
   when: my.playbooks.docker | bool
 
-- import_playbook: partials/tools/virtualbox.yml
-  when: my.playbooks.vitualbox | bool
-
 - import_playbook: partials/tools/toggl.yml
   when: my.playbooks.toggl | bool
   
