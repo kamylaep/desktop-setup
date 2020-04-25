@@ -14,7 +14,7 @@
         dest: "/tmp"
     
     - name: Installing PIPENV 
-      shell: "python /tmp/{{ pipenv_package }}"
+      shell: "python3 /tmp/{{ pipenv_package }}"
       become: yes
 
     - name: Exporting PIPENV_HOME and adding to PATH
