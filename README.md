@@ -32,9 +32,11 @@ $ ./setup.sh
 | Expressvpn              |
 | Firefox                 |
 | Flameshot               |
+| Forticlient             |
 | Git                     |
 | Golang                  |
 | Google Cloud SDK        |
+| Gitkraken               |
 | Gradle                  |
 | Htop                    |
 | Intellij                |
@@ -66,6 +68,7 @@ $ ./setup.sh
 | Vlc                     |
 | Vscode                  |
 | Wallpaper configuration |
+| Zoom                    |
 | Zsh                     |
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).
