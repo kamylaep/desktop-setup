@@ -45,6 +45,7 @@ my:
     golang: false 
     nodejs: false 
     bazel: false
+    rvm: false
     intellij: false
     pipenv: false
     docker: false 
@@ -87,6 +88,11 @@ my:
       path: '$HOME/workspace-go'
     node:
       version: '13.x'
+    rvm:
+      ruby:
+        versions: 
+          - ruby
+          - 2.5.7
     intellij:
       version: '2019.3.4'
       sha256: '6f50e47059632beace5ab2c17d505a458570347fa8c3df5f143b01e8bf55bc7a'

@@ -54,6 +54,7 @@ $ ./setup.sh
 | Redis Desktop Manager   |
 | Remmina                 |
 | Robo 3T                 |
+| RVM (and Ruby)          |
 | Slack                   |
 | Spotify                 |
 | SSH client/server       |
