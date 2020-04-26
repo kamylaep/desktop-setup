@@ -1,6 +1,6 @@
 # Desktop Setup
 
-Collection of playbooks and roles used to setup a linux (Xubuntu) desktop environment.
+Collection of playbooks and roles used to setup a Linux (Ubuntu/Xubuntu/Kubuntu) desktop environment.
 
 ## Before executing
 
@@ -14,63 +14,63 @@ $ ./setup.sh
 
 ## What can be installed / configured
 
-| Tool                    |
-| :---                    |
-| Atom                    |
-| Autolock                |
-| AWS Cli                 |
-| Baobab                  |
-| Bazel                   |
-| Beyond Compare          |
-| Caja                    |
-| Chromium-browser        |
-| Display manager         |
-| Docker                  |
-| Docker compose          |
-| Dropbox                 |
-| Eclipse                 |
-| Expressvpn              |
-| Firefox                 |
-| Flameshot               |
-| Forticlient             |
-| Git                     |
-| Golang                  |
-| Google Cloud SDK        |
-| Gitkraken               |
-| Gradle                  |
-| Htop                    |
-| Intellij                |
-| Java                    |
-| Kafkatool               |
-| Keepassxc               |
-| Keyboard shortcuts      |
-| Maven                   |
-| NodeJs                  |
-| NoMachine               |
-| Oh-my-zsh               |
-| pCloud                  |
-| Pip3                    |
-| Pipenv                  |
-| Protobuf                |
-| Redis Desktop Manager   |
-| Remmina                 |
-| Robo 3T                 |
-| RVM (and Ruby)          |
-| Slack                   |
-| Spotify                 |
-| SSH client/server       |
-| SSH key (1)             |
-| Sublime                 |
-| Terminator              |
-| Tig                     |
-| Toggl                   |
-| Transmission            |
-| Vim                     |
-| Virtualbox              |
-| Vlc                     |
-| Vscode                  |
-| Wallpaper configuration |
-| Zoom                    |
-| Zsh                     |
+| Tool                                |
+| :---                                |
+| Atom                                |
+| Autolock (XFCE only)                |
+| AWS Cli                             |
+| Baobab                              |
+| Bazel                               |
+| Beyond Compare                      |
+| Caja                                |
+| Chromium-browser                    |
+| Display manager (XFCE only)         |
+| Docker                              |
+| Docker compose                      |
+| Dropbox                             |
+| Eclipse                             |
+| Expressvpn                          |
+| Firefox                             |
+| Flameshot                           |
+| Forticlient                         |
+| Git                                 |
+| Golang                              |
+| Google Cloud SDK                    |
+| Gitkraken                           |
+| Gradle                              |
+| Htop                                |
+| Intellij                            |
+| Java                                |
+| Kafkatool                           |
+| Keepassxc                           |
+| Keyboard shortcuts (XFCE only)      |
+| Maven                               |
+| NodeJs                              |
+| NoMachine                           |
+| Oh-my-zsh                           |
+| pCloud                              |
+| Pip3                                |
+| Pipenv                              |
+| Protobuf                            |
+| Redis Desktop Manager               |
+| Remmina                             |
+| Robo 3T                             |
+| RVM (and Ruby)                      |
+| Slack                               |
+| Spotify                             |
+| SSH client/server                   |
+| SSH key (1)                         |
+| Sublime                             |
+| Terminator                          |
+| Tig                                 |
+| Toggl                               |
+| Transmission                        |
+| Vim                                 |
+| Virtualbox                          |
+| Vlc                                 |
+| Vscode                              |
+| Wallpaper configuration (XFCE only) |
+| Zoom                                |
+| Zsh                                 |
 
 (1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).
