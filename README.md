@@ -48,6 +48,7 @@ $ ./setup.sh
 | NodeJs                  |
 | NoMachine               |
 | Oh-my-zsh               |
+| pCloud                  |
 | Pip3                    |
 | Pipenv                  |
 | Protobuf                |

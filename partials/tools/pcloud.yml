@@ -1,0 +1,22 @@
+---
+- hosts: all
+  vars:
+    pcloud_dir: /home/{{ my.data.username}}/pCloud
+  become: yes
+
+  tasks:
+    - name: Creating PCLOUD directory
+      file:
+        path: "{{ pcloud_dir }}"
+        state: directory
+        owner: "{{ my.data.username }}"
+        group: "{{ my.data.username }}"
+        mode: 0755
+
+    - name: Downloading PCLOUD
+      get_url:
+        url: "{{ my.tools.pcloud.url }}"
+        dest: "{{ pcloud_dir }}"
+        owner: "{{ my.data.username }}"
+        group: "{{ my.data.username }}"
+        mode: 0755

@@ -50,6 +50,7 @@ my:
     pipenv: false
     docker: false 
     toggl: false
+    pcloud: false
     google_cloud_sdk: false
     sdkman: false
     gradle: false 
@@ -161,6 +162,8 @@ my:
       version: '1.25.4'
     toggl:
       version: '7.5.50'
+    pcloud:
+      url: https://p-def1.pcloud.com/cBZLReAUjZLbsoWfZZZt7cKa7Z2ZZ8yLZkZpOo5VZzFZtkZO0ZYXZ45Z37ZpVZY0Z3FZr5ZGFZh5ZVXZyVZtouTkZd9rAqlIWphy0EngLe7aDrkQWCRJy/pcloud
     google_cloud_sdk:
       version: '285.0.1'
       components: pubsub-emulator app-engine-java beta
