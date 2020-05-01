@@ -82,6 +82,9 @@
 - import_playbook: partials/dev/sdkman.yml
   when: my.playbooks.sdkman | bool
 
+- import_playbook: partials/tools/postman.yml
+  when: my.playbooks.postman | bool
+
 - import_playbook: partials/dev/gradle.yml
   when: my.playbooks.gradle | bool
   

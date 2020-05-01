@@ -51,6 +51,7 @@ $ ./setup.sh
 | pCloud                              |
 | Pip3                                |
 | Pipenv                              |
+| Postman                             |
 | Protobuf                            |
 | Redis Desktop Manager               |
 | Remmina                             |

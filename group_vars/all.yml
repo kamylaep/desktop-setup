@@ -53,6 +53,7 @@ my:
     pcloud: false
     google_cloud_sdk: false
     sdkman: false
+    postman: false
     gradle: false 
     atom: false
     sublime: false

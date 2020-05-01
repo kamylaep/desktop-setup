@@ -1,0 +1,54 @@
+---
+  - hosts: all
+    vars:
+      - postman_url: https://dl.pstmn.io/download/latest/linux64
+      - home_path: "/usr/local/postman"
+      - home_name: "POSTMAN_HOME"
+      - launcher_name: Postman
+      - launcher_cmd: "{{ home_path }}/Postman"
+      - launcher_icon: "{{ home_path }}/app/resources/app/assets/icon.png"
+  
+    tasks:
+      - name: Creating POSTMAN dir
+        file:
+          path: "{{ home_path }}"
+          state: directory
+        become: yes
+        
+      - name: Unzipping POSTMAN
+        unarchive:
+          src: "{{ postman_url }}"
+          extra_opts:
+            - "--strip-components=1"
+          dest: "{{ home_path }}"
+          remote_src: true
+        become: yes
+     
+      - name: Setting POSTMAN permissions
+        file:
+          path: "{{ home_path }}"
+          owner: "{{ my.data.username }}"
+          group: "{{ my.data.username }}"
+          recurse: yes
+        become: yes
+  
+      - name: Exporting POSTMAN and add to PATH
+        template:
+          src: ../../templates/init.sh.j2
+          dest: /etc/profile.d/robo3t.sh
+          backup: yes
+          owner: root
+          group: root
+          mode: 'u=rw,g=r,o=r'
+        become: yes
+  
+      - name: Exporting POSTMAN menu launcher
+        template:
+          src: ../../templates/app.desktop.j2
+          dest: /usr/share/applications/postman.desktop
+          backup: yes
+          owner: root
+          group: root
+          mode: 'u=rw,g=r,o=r'
+        become: yes
+ 
