@@ -1,7 +1,7 @@
 ---
 - hosts: all
   vars:
-    pcloud_dir: /home/{{ my.data.username}}/pCloud
+    pcloud_dir: /usr/local/pCloud
   become: yes
 
   tasks:
