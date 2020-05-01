@@ -187,7 +187,6 @@ my:
   packages_debian: 
     - baobab
     - caja
-    - chromium-browser
     - firefox
     - flameshot
     - htop
@@ -203,6 +202,7 @@ my:
     - virtualbox
   
   packages_dpkg:
+    - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     - https://www.scootersoftware.com/bcompare-4.3.3.24545_amd64.deb
     - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
     - https://download.nomachine.com/download/6.9/Linux/nomachine_6.9.2_1_amd64.deb
