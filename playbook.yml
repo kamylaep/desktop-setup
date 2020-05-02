@@ -58,6 +58,9 @@
 - import_playbook: partials/dev/nodejs.yml
   when: my.playbooks.nodejs | bool
   
+- import_playbook: partials/dev/yarn.yml
+  when: my.playbooks.yarn | bool
+
 - import_playbook: partials/dev/bazel.yml
   when: my.playbooks.bazel | bool
 

@@ -72,6 +72,7 @@ $ ./setup.sh
 | Vlc                                 |
 | Vscode                              |
 | Wallpaper configuration (XFCE only) |
+| Yarn                                |
 | Zoom                                |
 | Zsh                                 |
 
