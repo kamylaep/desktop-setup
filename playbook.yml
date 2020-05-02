@@ -7,6 +7,9 @@
 - import_playbook: partials/tools/ssh.yml
   when: my.playbooks.ssh | bool
 
+- import_playbook: partials/tools/lastpass.yml
+  when: my.playbooks.lastpass | bool
+
 - import_playbook: partials/config/xfce4/wallpaper.yml
   when: my.playbooks.wallpaper | bool
 

@@ -1,0 +1,22 @@
+---
+  - hosts: all
+    vars:
+      - lastpass_temp_dir: /tmp/lastpass
+   
+    tasks:
+      - name: Creating LASTPASS temp dir
+        file:
+          path: "{{ lastpass_temp_dir }}"
+          state: directory
+        become: yes
+        
+      - name: Unzipping LASTPASS
+        unarchive:
+          src: "{{ my.tools.lastpass.url }}"
+          dest: "{{ lastpass_temp_dir }}"
+          remote_src: true
+          mode: 0755
+        become: yes
+      
+      - name: Installing LASTPASS
+        shell: "cd {{ lastpass_temp_dir }} && ./install_lastpass.sh"

@@ -44,6 +44,7 @@ $ ./setup.sh
 | Kafkatool                           |
 | Keepassxc                           |
 | Keyboard shortcuts (XFCE only)      |
+| Lastpass                            |
 | Maven                               |
 | NodeJs                              |
 | NoMachine                           |

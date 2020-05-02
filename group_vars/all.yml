@@ -28,6 +28,7 @@ my:
   playbooks: 
     sshkey: false 
     ssh: false
+    lastpass: false
     wallpaper: false
     display_manager: false
     keyboard_shortcuts: false
@@ -65,6 +66,8 @@ my:
     kafkatool: false
 
   tools:
+    lastpass:
+      url: https://download.cloud.lastpass.com/linux/lplinux.tar.bz2
     codestats: ##### CHANGE ME #####
       api_key: 
     expressvpn:
