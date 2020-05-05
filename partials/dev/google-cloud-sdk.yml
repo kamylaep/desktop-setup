@@ -3,7 +3,7 @@
   vars:
     - gcsdk_package: "google-cloud-sdk-{{ my.tools.google_cloud_sdk.version }}-linux-x86_64.tar.gz"
     - gcsdk_url: "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/{{ gcsdk_package }}"
-    - home_root: "/home/{{ my.data.username }}"
+    - home_root: "/usr/local"
     - home_path: "{{ home_root }}/google-cloud-sdk"
 
   tasks:
@@ -16,7 +16,11 @@
       unarchive:
         src: "/tmp/{{ gcsdk_package }}"
         dest: "{{ home_root }}"
+        owner: "{{ my.data.username }}"
+        group: "{{ my.data.username }}"
+        mode: 0755
         remote_src: true
+      become: yes
     
     - name: Installing GOOGLE CLOUD SDK
       shell: |
@@ -26,3 +30,4 @@
         --command-completion true \
         --path-update true \
         --additional-components {{ my.tools.google_cloud_sdk.components }}
+      become: yes
