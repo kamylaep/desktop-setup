@@ -30,3 +30,14 @@
               - rvm
               - ruby
               - rails
+
+  tasks:
+    - name: Configuring ZPROFILE to source /etc/profile.d scripts
+      blockinfile:
+        path: /etc/zsh/zprofile
+        block: |
+          for f in /etc/profile.d/*.sh; do 
+              source "$f" 
+          done
+      become: yes
+      when: ansible_env['XDG_CURRENT_DESKTOP'] == "KDE"
