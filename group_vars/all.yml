@@ -170,7 +170,7 @@ my:
     pcloud: ## GET THE URL ON THE PCLOUD SITE. THE DOWNLOAD LINK HAS AN EXPIRATION DATE ##
       url:
     google_cloud_sdk:
-      version: '285.0.1'
+      version: '291.0.0'
       components: pubsub-emulator app-engine-java beta
     gradle:
       version: '6.2.2'
