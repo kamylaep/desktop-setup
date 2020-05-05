@@ -118,7 +118,6 @@ my:
         - net.codestats.plugin.atom.intellij
         - com.arasthel.groovy.override-completion
         - InspectorGroovy
-        #- Spock Framework Enhancements
         - MavenRunHelper
         - com.dubreuia
         - Lombook Plugin
@@ -126,6 +125,7 @@ my:
         - com.yiycf.plugins.mavenDependencyHelper
         - com.octogog.idea.bazel-build-formatter
         - com.google.idea.bazel.ijwb
+        - tanvd.grazi
       plugins_disabled:
         - Ant Tracer Plugin
         - AntSupport
