@@ -1,0 +1,29 @@
+---
+  - hosts: all
+    vars:
+      - gitlfs_package: "git-lfs-linux-amd64-v{{ my.tools.gitlfs.version }}"
+      - gitlfs_url: "https://github.com/git-lfs/git-lfs/releases/download/v{{ my.tools.gitlfs.version }}/{{ gitlfs_package }}.tar.gz"
+  
+    tasks:
+      - name: Downloading GIT LFS
+        get_url:
+          url: "{{ gitlfs_url }}"
+          dest: '/tmp'
+    
+      - name: Create temp GIT LFS directory
+        file:
+          path: "/tmp/{{ gitlfs_package }}"
+          state: directory
+
+      - name: Unzipping GIT LFS
+        unarchive:
+          src: "/tmp/{{ gitlfs_package }}.tar.gz"
+          dest: "/tmp/{{ gitlfs_package }}"
+          remote_src: true
+     
+      - name: Installing GIT LFS
+        shell: "/tmp/{{ gitlfs_package }}/install.sh"
+        become: yes
+
+      - name: Enabling GIT LFS
+        shell: git lfs install

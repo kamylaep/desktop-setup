@@ -40,7 +40,8 @@ my:
     expressvpn: false 
     spotify: false
     java: false 
-    git: false 
+    git: false
+    gitlfs: false
     tig: false
     maven: false 
     golang: false 
@@ -81,6 +82,8 @@ my:
         # - name: latest 
         #   version: '13'
         #   default: no
+    gitlfs:
+      version: '2.10.0'
     tig:
       version: '2.5.0'
     maven:

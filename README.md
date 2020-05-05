@@ -34,6 +34,7 @@ $ ./setup.sh
 | Flameshot                           |
 | Forticlient                         |
 | Git                                 |
+| Git-LFS                             |
 | Golang                              |
 | Google Cloud SDK                    |
 | Gitkraken                           |

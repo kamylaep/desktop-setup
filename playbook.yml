@@ -46,6 +46,9 @@
 - import_playbook: partials/dev/git.yml
   when: my.playbooks.git | bool
 
+- import_playbook: partials/dev/git-lfs.yml
+  when: my.playbooks.gitlfs | bool
+
 - import_playbook: partials/dev/tig.yml
   when: my.playbooks.tig | bool
 
