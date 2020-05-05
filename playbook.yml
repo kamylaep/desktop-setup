@@ -11,16 +11,16 @@
   when: my.playbooks.lastpass | bool
 
 - import_playbook: partials/config/xfce4/wallpaper.yml
-  when: my.playbooks.wallpaper | bool
+  when: ansible_env['XDG_CURRENT_DESKTOP'] == "XFCE" and my.playbooks.wallpaper | bool
 
 - import_playbook: partials/config/xfce4/display-manager.yml
-  when: my.playbooks.display_manager | bool
+  when: ansible_env['XDG_CURRENT_DESKTOP'] == "XFCE" and my.playbooks.display_manager | bool
 
 - import_playbook: partials/config/xfce4/keyboard-shortcuts.yml
-  when: my.playbooks.keyboard_shortcuts | bool
+  when: ansible_env['XDG_CURRENT_DESKTOP'] == "XFCE" and my.playbooks.keyboard_shortcuts | bool
 
 - import_playbook: partials/config/xfce4/autolock.yml
-  when: my.playbooks.autolock | bool
+  when: ansible_env['XDG_CURRENT_DESKTOP'] == "XFCE" and my.playbooks.autolock | bool
 
 - import_playbook: partials/package-manager/packages.yml
   when: my.playbooks.packages | bool
