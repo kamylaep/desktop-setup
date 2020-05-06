@@ -72,6 +72,31 @@ my:
       url: https://download.cloud.lastpass.com/linux/lplinux.tar.bz2
     codestats: ##### CHANGE ME #####
       api_key: 
+    ohmyzsh:
+      theme: frisk
+      plugins:
+        - gitfast
+        - docker
+        - docker-compose
+        - heroku
+        - helm
+        - kubectl
+        - minikube
+        - mvn
+        - ansible
+        - golang
+        - gradle
+        - node
+        - npm
+        - npx
+        - pip
+        - pipenv
+        - python
+        - tig
+        - virtualenv
+        - rvm
+        - ruby
+        - rails
     expressvpn:
       version: 2.4.4.19-1
     java: 

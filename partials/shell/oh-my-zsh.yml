@@ -6,30 +6,8 @@
       users:
         - username: '{{ my.data.username }}'
           oh_my_zsh:
-            theme: frisk
-            plugins:
-              - gitfast
-              - docker
-              - docker-compose
-              - heroku
-              - helm
-              - kubectl
-              - minikube
-              - mvn
-              - ansible
-              - golang
-              - gradle
-              - node
-              - npm
-              - npx
-              - pip
-              - pipenv
-              - python
-              - tig
-              - virtualenv
-              - rvm
-              - ruby
-              - rails
+            theme: '{{ my.tools.ohmyzsh.theme }}'
+            plugins: '{{ my.tools.ohmyzsh.plugins }}'
 
   tasks:
     - name: Configuring ZPROFILE to source /etc/profile.d scripts
