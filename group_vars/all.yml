@@ -36,6 +36,7 @@ my:
     packages: false 
     packages_dpkg: false
     vscode: false
+    terminator: false
     ohmyzsh: false 
     expressvpn: false 
     spotify: false
@@ -226,7 +227,6 @@ my:
     - keepassxc
     - python3-pip
     - remmina
-    - terminator
     - transmission
     - vim
     - vlc

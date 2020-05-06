@@ -1,0 +1,38 @@
+---
+- hosts: all
+  vars:
+    - terminator_config_path: "/home/{{ my.data.username }}/.config/terminator"
+    - terminator_config_file: "{{ terminator_config_path }}/config"
+
+  tasks:
+    - name: Installing TERMINATOR
+      package:
+        name: terminator
+      become: yes
+
+    - name: Creating TERMINATOR config directory
+      file:
+        path: "{{ terminator_config_path }}"
+        state: directory
+        owner: "{{ my.data.username }}"
+        group: "{{ my.data.username }}"
+        mode: 0755
+        recurse: yes
+
+
+    - name: Creating TERMINATOR config file
+      file:
+        path: "{{ terminator_config_file }}"
+        state: touch
+        owner: "{{ my.data.username }}"
+        group: "{{ my.data.username }}"
+        mode: 0755
+
+    - name: Configuring TERMINATOR 
+      blockinfile:
+        path: "{{ terminator_config_file }}"
+        block: |
+          [profiles]
+          [[default]]
+            scrollback_infinite = True
+            login_shell = True

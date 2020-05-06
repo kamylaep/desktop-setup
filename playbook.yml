@@ -31,6 +31,9 @@
 - import_playbook: partials/dev/editors/vscode.yml
   when: my.playbooks.vscode | bool
 
+- import_playbook: partials/shell/terminator.yml
+  when: my.playbooks.terminator | bool
+
 - import_playbook: partials/shell/oh-my-zsh.yml
   when: my.playbooks.ohmyzsh | bool
 
