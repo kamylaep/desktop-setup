@@ -35,10 +35,10 @@
   when: my.playbooks.terminator | bool
 
 - import_playbook: partials/shell/zsh.yml
-  when: my.playbooks.zsh | bool
+  when: my.playbooks.zsh | bool or my.playbooks.ohmyzsh | bool
 
 - import_playbook: partials/shell/oh-my-zsh.yml
-  when: my.playbooks.ohmyzsh | bool
+  when: my.playbooks.ohmyzsh | bool or my.playbooks.zsh | bool
 
 - import_playbook: partials/tools/expressvpn.yml
   when: my.playbooks.expressvpn | bool
@@ -47,10 +47,10 @@
   when: my.playbooks.spotify | bool
 
 - import_playbook: partials/dev/java.yml
-  when: my.playbooks.java | bool
+  when: my.playbooks.java | bool or my.playbooks.maven | bool or my.playbooks.intellij | bool
 
 - import_playbook: partials/dev/git.yml
-  when: my.playbooks.git | bool
+  when: my.playbooks.git | bool or my.playbooks.gitlfs | bool or my.playbooks.tig | bool
 
 - import_playbook: partials/dev/git-lfs.yml
   when: my.playbooks.gitlfs | bool
