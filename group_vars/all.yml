@@ -37,6 +37,7 @@ my:
     packages_dpkg: false
     vscode: false
     terminator: false
+    zsh: false
     ohmyzsh: false 
     expressvpn: false 
     spotify: false
@@ -230,7 +231,6 @@ my:
     - transmission
     - vim
     - vlc
-    - zsh
     - usb-creator-gtk
     - virtualbox
   
