@@ -93,7 +93,10 @@
 
 - import_playbook: partials/dev/google-cloud-sdk.yml
   when: my.playbooks.google_cloud_sdk | bool
-  
+
+- import_playbook: partials/dev/redis.yml
+  when: my.playbooks.redis | bool
+
 - import_playbook: partials/dev/sdkman.yml
   when: my.playbooks.sdkman | bool
 

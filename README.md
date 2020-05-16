@@ -55,6 +55,7 @@ $ ./setup.sh
 | Pipenv                              |
 | Postman                             |
 | Protobuf                            |
+| Redis                               |
 | Redis Desktop Manager               |
 | Remmina                             |
 | Robo 3T                             |

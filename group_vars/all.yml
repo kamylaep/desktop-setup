@@ -57,6 +57,7 @@ my:
     toggl: false
     pcloud: false
     google_cloud_sdk: false
+    redis: false
     sdkman: false
     postman: false
     gradle: false 

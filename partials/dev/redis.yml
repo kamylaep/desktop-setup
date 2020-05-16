@@ -1,0 +1,20 @@
+---
+- hosts: all
+
+  tasks:
+        
+    - name: Downloading REDIS
+      unarchive:
+        src: http://download.redis.io/redis-stable.tar.gz
+        dest: /tmp/
+        remote_src: true
+    
+    - name: Running REDIS make
+      make:
+        chdir: /tmp/redis-stable
+  
+    - name: Running REDIS make install
+      make:
+        chdir: /tmp/redis-stable
+        target: install
+      become: yes
