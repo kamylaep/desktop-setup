@@ -21,19 +21,19 @@
     - name: Copy Protoc binary to /usr/local/bin
       copy:
         src: /tmp/protoc/bin/protoc
-        dest: /usr/bin/protoc
+        dest: /usr/local/bin/protoc
         mode: 0755
         owner: root
         remote_src: yes
       become: yes
 
-    - name: Copy Protoc includes to /usr/local/include
-      command: cp -r /tmp/protoc/include/google /usr/local/include
+    - name: Copy Protoc includes to /usr/local/bin/include
+      command: cp -r /tmp/protoc/include/google /usr/local/bin/include
       become: yes
 
-    - name: Set permissions on /usr/local/include/google
+    - name: Set permissions on /usr/local/bin/include/google
       file:
-        path: /usr/local/include/google
+        path: /usr/local/bin/include/google
         mode: 0755
         owner: root
         recurse: yes
