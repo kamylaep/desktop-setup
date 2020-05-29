@@ -37,3 +37,6 @@
 
     - name: Install BUILDOZER
       shell: "/opt/go/{{ my.tools.golang.version }}/bin/go get github.com/bazelbuild/buildtools/buildozer"
+
+    - name: Install BUILDFIER
+      shell: "/opt/go/{{ my.tools.golang.version }}/bin/go get github.com/bazelbuild/buildtools/buildifier"
