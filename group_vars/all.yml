@@ -130,9 +130,10 @@ my:
         versions: 
           - ruby
           - 2.5.7
+          - 2.6.3
     intellij:
-      version: '2019.3.4'
-      sha256: '6f50e47059632beace5ab2c17d505a458570347fa8c3df5f143b01e8bf55bc7a'
+      version: '2019.3.5'
+      sha256: 'ab100ea18628b188a8687d2e93f1d4428f03e989da1d2336b2f63f73a2debf4d'
       default_jdk: '8'
       style_guide_name: GoogleStyle - Custom
       style_guide_path: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
