@@ -196,7 +196,7 @@ my:
         - WebSphere
         - ZKM
     docker_compose:
-      version: '1.25.4'
+      version: '1.26.0'
     toggl:
       version: '7.5.50'
     pcloud: ## GET THE URL ON THE PCLOUD SITE. THE DOWNLOAD LINK HAS AN EXPIRATION DATE ##
