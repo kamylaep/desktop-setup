@@ -14,18 +14,6 @@
         - "{{ my.data.username }}"
         - "{{ my.data.email }}"
 
-    - name: Validating required 'codestats' 
-      assert:
-        that:
-          - item is defined
-          - item is not none
-          - item != ""
-        fail_msg: "Verify required variables on the .../group_var/all.yml file"
-      with_items: 
-        - "{{ my.tools.codestats.api_key }}"
-      when: my.playbooks.vscode | bool or my.playbooks.intellij | bool
-
-
     - name: Validating required 'my.data' variables for AWS Cli
       assert:
         that:
