@@ -46,7 +46,6 @@
             - esbenp.prettier-vscode
             - ms-azuretools.vscode-docker
             - ms-python.python
-            - ms-vscode.go
             - octref.vetur
             - vscjava.vscode-java-pack
             - riussi.code-stats-vscode
