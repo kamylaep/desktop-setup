@@ -117,8 +117,8 @@ my:
     maven:
       version: '3.6.3'
     bazel:
-      version: '2.2.0'
-      sha256: 'sha256:b2f002ea0e6194a181af6ac84cd94bd8dc797722eb2354690bebac92dda233ff'
+      version: '3.4.1'
+      sha256: 'sha256:1a64c807716e10c872f1618852d95f4893d81667fe6e691ef696489103c9b460'
     golang:
       version: '1.14'
       sha256sum: '08df79b46b0adf498ea9f320a0f23d6ec59e9003660b4c9c1ce8e5e2c6f823ca'
