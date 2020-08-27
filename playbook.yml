@@ -62,7 +62,7 @@
   when: my.playbooks.maven | bool
   
 - import_playbook: partials/dev/golang.yml
-  when: my.playbooks.golang | bool
+  when: my.playbooks.golang | bool or my.playbooks.bazel | bool
   
 - import_playbook: partials/dev/nodejs.yml
   when: my.playbooks.nodejs | bool
