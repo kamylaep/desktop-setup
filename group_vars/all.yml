@@ -132,8 +132,8 @@ my:
           - 2.5.7
           - 2.6.3
     intellij:
-      version: '2019.3.5'
-      sha256: 'ab100ea18628b188a8687d2e93f1d4428f03e989da1d2336b2f63f73a2debf4d'
+      version: '2020.1.4'
+      sha256: '2f25b1e54a927d8267420cc0f510677df757319e3cad4b3ce75e22a9c07fd11b'
       default_jdk: '8'
       style_guide_name: GoogleStyle - Custom
       style_guide_path: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
@@ -148,15 +148,15 @@ my:
         - org.jetbrains.plugins.ruby
         - org.intellij.scala
         - net.codestats.plugin.atom.intellij
-        - com.arasthel.groovy.override-completion
-        - InspectorGroovy
+        # - com.arasthel.groovy.override-completion
+        # - InspectorGroovy
         - MavenRunHelper
         - com.dubreuia
         - Lombook Plugin
         - Key Promoter X
         - com.yiycf.plugins.mavenDependencyHelper
-        - com.octogog.idea.bazel-build-formatter
-        - com.google.idea.bazel.ijwb
+        # - com.octogog.idea.bazel-build-formatter
+        # - com.google.idea.bazel.ijwb
         - tanvd.grazi
       plugins_disabled:
         - Ant Tracer Plugin
