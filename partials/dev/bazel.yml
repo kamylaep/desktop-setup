@@ -40,3 +40,6 @@
 
     - name: Install BUILDFIER
       shell: "/opt/go/{{ my.tools.golang.version }}/bin/go get github.com/bazelbuild/buildtools/buildifier"
+
+    - name: Install UNUSED_DEPS
+      shell: "/opt/go/{{ my.tools.golang.version }}/bin/go get github.com/bazelbuild/buildtools/unused_deps"
