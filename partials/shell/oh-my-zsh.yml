@@ -18,4 +18,4 @@
               source "$f" 
           done
       become: yes
-      when: ansible_env['XDG_CURRENT_DESKTOP'] == "KDE"
+     

@@ -1,6 +1,6 @@
 # Desktop Setup
 
-Collection of playbooks and roles used to setup a Linux (Ubuntu/Xubuntu/Kubuntu) desktop environment.
+Collection of playbooks and roles used to setup a Linux (Ubuntu/Xubuntu/Kubuntu - 20.04) desktop environment.
 
 ## Before executing
 
@@ -17,14 +17,12 @@ $ ./setup.sh
 | Tool                                |
 | :---                                |
 | Atom                                |
-| Autolock (XFCE only)                |
 | AWS Cli                             |
 | Baobab                              |
 | Bazel                               |
 | Beyond Compare                      |
 | Caja                                |
 | Chromium-browser                    |
-| Display manager (XFCE only)         |
 | Docker                              |
 | Docker compose                      |
 | Dropbox                             |
@@ -44,7 +42,6 @@ $ ./setup.sh
 | Java                                |
 | Kafkatool                           |
 | Keepassxc                           |
-| Keyboard shortcuts (XFCE only)      |
 | Lastpass                            |
 | Maven                               |
 | NodeJs                              |
@@ -73,7 +70,6 @@ $ ./setup.sh
 | Virtualbox                          |
 | Vlc                                 |
 | Vscode                              |
-| Wallpaper configuration (XFCE only) |
 | Yarn                                |
 | Zoom                                |
 | Zsh                                 |

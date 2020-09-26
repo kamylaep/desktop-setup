@@ -1,7 +1,0 @@
----
-- hosts: all
- 
-  tasks:
-    - name: Configuring keyboard shortcuts
-      shell: xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/{{ item.shortcut }}" --create --type string --set "{{ item.action }}"
-      with_items: "{{ my.os.keyboard_shortcuts }}"
