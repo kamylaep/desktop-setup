@@ -47,7 +47,7 @@
   when: my.playbooks.tig | bool
 
 - import_playbook: partials/dev/maven.yml
-  when: my.playbooks.maven | bool
+  when: my.playbooks.maven | bool or my.playbooks.intellij | bool
   
 - import_playbook: partials/dev/golang.yml
   when: my.playbooks.golang | bool or my.playbooks.bazel | bool
