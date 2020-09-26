@@ -218,7 +218,7 @@ my:
   packages_dpkg:
     - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     - https://www.scootersoftware.com/bcompare-4.3.6.25063_amd64.deb
-    - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
+    - https://linux.dropbox.com/packages/ubuntu/dropbox_2020.03.04_amd64.deb
     - https://download.nomachine.com/download/6.9/Linux/nomachine_6.9.2_1_amd64.deb
     - https://downloads.slack-edge.com/linux_releases/slack-desktop-4.3.2-amd64.deb
     - https://release.gitkraken.com/linux/gitkraken-amd64.deb
