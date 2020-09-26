@@ -3,7 +3,7 @@
 
   roles:
     - role: ../../../external-roles/gantsign.intellij
-      intellij_edition: ultimate
+      intellij_edition: '{{ my.tools.intellij.edition }}'
       intellij_version: '{{ my.tools.intellij.version }}'
       intellij_redis_sha256sum: '{{ my.tools.intellij.sha256 }}'
       intellij_default_jdk_home: '{{ ansible_local.java_default.general.home }}'
