@@ -24,6 +24,3 @@
       - name: Installing GIT LFS
         shell: "/tmp/{{ gitlfs_package }}/install.sh"
         become: yes
-
-      - name: Enabling GIT LFS
-        shell: git lfs install
