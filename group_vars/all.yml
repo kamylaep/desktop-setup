@@ -3,7 +3,7 @@ my:
   data:
     # REQUIRED: used by the git playbook
     fullname: 
-    # REQUIRED: used by atom, vscode, intellij, sshkey and oh-my_zsh playbooks
+    # REQUIRED: used by atom, vscode, intellij, sshkey and oh-my_zsh playbooks, it must be the same one used to login into your computer
     username: 
     # REQUIRED: used by the git and sshkey playbook
     email: 
