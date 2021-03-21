@@ -25,9 +25,9 @@ The setup script will update your system, install ansible, download the required
 ## Things you should know
 
 - There are some dependencies between the playbooks, for instance, if you choose to install Intellij, Java also will be 
-  installed. To check all the dependencies, take a look at the [playbook.yml](playbook.yml)
+  installed. To check all the dependencies, take a look at the [playbook.yml](playbook.yml) file
 - You can use the [configuration file](group_vars/all.yml) to change the version of the tools being installed.
-- The [Intellij playbook](/partials/ides/intellij.yml) is configured to use Java 11, so you should not remove this 
+- The [Intellij playbook](/partials/intellij.yml) is configured to use Java 11, so you should not remove this 
   Java version from the configuration file.
 - The [Google Cloud SDK playbook](partials/google-cloud-sdk.yml) expects you to use [zsh](http://zsh.sourceforge.net/), 
   if you don't use it, change the installation command from `--rc-path /home/{{ my.data.username }}/.zshrc` to 
