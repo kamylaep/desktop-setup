@@ -15,46 +15,10 @@
               home: '{{ ansible_local.java_11.general.home }}'
             - name: '8'
               home: '{{ ansible_local.java_8.general.home }}'
-          intellij_default_jdk: '11'
+          intellij_default_jdk: '{{ my.tools.intellij.default_jdk }}'
           #intellij_plugins: '{{ my.tools.intellij.plugins }}'
-          intellij_disabled_plugins: 
-            - Ant Tracer Plugin
-            - AntSupport
-            - CFML Support
-            - ClearcasePlugin
-            - CloudBees
-            - CloudFoundry
-            - com.intellij.drools
-            - com.intellij.flex
-            - com.intellij.jboss.arquillian
-            - com.intellij.jboss.core
-            - com.intellij.jbpm
-            - com.intellij.seam
-            - com.intellij.seam.pageflow
-            - com.intellij.seam.pages
-            - com.intellij.struts2
-            - com.intellij.tapestry
-            - com.jetbrains.plugins.asp
-            - CVS
-            - DevKit
-            - Geronimo
-            - GlassFish
-            - hg4idea
-            - J2ME
-            - JBoss
-            - JSR45Plugin
-            - OpenShift
-            - org.jetbrains.plugins.javaFX
-            - org.jetbrains.plugins.rest
-            - PerforceDirectPlugin
-            - Resin
-            - StrutsAssistant
-            - Subversion
-            - TFS
-            - Weblogic
-            - WebSphere
-            - ZKM
+          intellij_disabled_plugins: '{{ my.tools.intellij.plugins_disabled }}'
           intellij_codestyles:
-            - name: 'GoogleStyle - Custom'
-              url: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
-          intellij_default_codestyle: 'GoogleStyle - Custom'
+            - name: '{{ my.tools.intellij.style_guide_name }}'
+              url: '{{ my.tools.intellij.style_guide_path }}'
+          intellij_default_codestyle: '{{ my.tools.intellij.style_guide_name }}'

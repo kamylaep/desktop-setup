@@ -64,6 +64,7 @@ my:
         - ruby
         - rails
     java: 
+      # Intellij's playbook uses both version, so don't remove them
       versions:
         - name: 8
           version: '8'
@@ -111,3 +112,92 @@ my:
       edition: ultimate # ultimate or community
       # You can get the sha256 at this link https://confluence.jetbrains.com/display/IDEADEV/Latest+builds or at external_roles/gantsign.intellij/vars/versions
       sha256: 'd1d0b8300a958116acdb1fde4514ca27d64e329375a2c0402c4eda18c0e18672'
+      default_jdk: '11'
+      style_guide_name: 'GoogleStyle - Custom'
+      style_guide_path: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
+      #plugins: 
+      plugins_disabled: 
+        - Ant Tracer Plugin
+        - AntSupport
+        - CFML Support
+        - ClearcasePlugin
+        - CloudBees
+        - CloudFoundry
+        - com.intellij.drools
+        - com.intellij.flex
+        - com.intellij.jboss.arquillian
+        - com.intellij.jboss.core
+        - com.intellij.jbpm
+        - com.intellij.seam
+        - com.intellij.seam.pageflow
+        - com.intellij.seam.pages
+        - com.intellij.struts2
+        - com.intellij.tapestry
+        - com.jetbrains.plugins.asp
+        - CVS
+        - DevKit
+        - Geronimo
+        - GlassFish
+        - hg4idea
+        - J2ME
+        - JBoss
+        - JSR45Plugin
+        - OpenShift
+        - org.jetbrains.plugins.javaFX
+        - org.jetbrains.plugins.rest
+        - PerforceDirectPlugin
+        - Resin
+        - StrutsAssistant
+        - Subversion
+        - TFS
+        - Weblogic
+        - WebSphere
+        - ZKM
+    vscode:
+      settings: {
+        'cSpell.language': 'en,pt,pt_BR',
+        'cSpell.diagnosticLevel': 'Warning',
+        'editor.minimap.enabled': 'false',
+        'editor.suggestSelection': 'first',
+        'editor.tabSize': '2',
+        'eslint.validate': [
+          {
+            'autoFix': false,
+            'language': 'vue'
+          },
+          {
+            'autoFix': false,
+            'language': 'javascript'
+          }
+        ],
+        'emmet.triggerExpansionOnTab': true,
+        'java.configuration.checkProjectSettingsExclusions': false,
+        'javascript.preferences.quoteStyle': 'single',
+        'prettier.jsxSingleQuote': true,
+        'prettier.singleQuote': true,
+        'typescript.preferences.quoteStyle': 'single',
+        'vetur.format.defaultFormatterOptions': {
+          'prettier': {
+            'singleQuote': true
+          }
+        },
+        'vsintellicode.modify.editor.suggestSelection': 'automaticallyOverrodeDefaultValue',
+        'workbench.colorTheme': 'Default Light+',
+        'workbench.editor.enablePreview': false,
+        'workbench.startupEditor': 'newUntitledFile',
+        'editor.rulers': [80,120]
+      }
+      extensions:
+        - dbaeumer.vscode-eslint
+        - eamodio.gitlens
+        - eg2.vscode-npm-script
+        - esbenp.prettier-vscode
+        - ms-azuretools.vscode-docker
+        - ms-python.python
+        - octref.vetur
+        - vscjava.vscode-java-pack
+        - streetsidesoftware.code-spell-checker
+        - shd101wyy.markdown-preview-enhanced
+        - streetsidesoftware.code-spell-checker-portuguese-brazilian
+        - yzhang.markdown-all-in-one
+        - vscoss.vscode-ansible
