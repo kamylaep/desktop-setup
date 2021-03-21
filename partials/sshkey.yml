@@ -26,3 +26,7 @@
       shell: eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa
       become: yes
       become_user: '{{ my.data.username }}'
+    
+    - name: Public KEY
+      debug:
+        msg: '{{ ssh_key.public_key }}'
