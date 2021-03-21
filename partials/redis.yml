@@ -9,10 +9,14 @@
         dest: /tmp/
         remote_src: true
     
-    - name: Running REDIS make
-      make:
-        chdir: /tmp/redis-stable
-  
+    - name: Installing REDIS dependencies
+      package:
+        name: "{{ item }}"
+      with_items:
+        - make
+        - build-essential
+      become: yes
+
     - name: Running REDIS make install
       make:
         chdir: /tmp/redis-stable

@@ -31,8 +31,9 @@
           - libncurses5-dev
           - libncursesw5-dev
           - make
+          - build-essential
         become: yes
-        
+     
       - name: Make install TIG
         make:
           chdir: "/tmp/{{ tig_package }}"
