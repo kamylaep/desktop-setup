@@ -1,8 +1,7 @@
 - hosts: all
   
-  
   tasks:
-    - name: Installing VLC
+    - name: Installing HTOP
       package:
-        name: vlc
+        name: htop
       become: yes

@@ -2,9 +2,9 @@
 - hosts: all
 
   tasks:
-    - name: Install JAVA
+    - name: Installing JAVA
       include_role:
-        name: ../../external-roles/gantsign.java
+        name: ../external-roles/gantsign.java
       vars:
         java_is_default_installation: "{{ java_versions.default }}"
         java_version: "{{ java_versions.version }}"

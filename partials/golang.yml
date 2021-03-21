@@ -1,7 +1,7 @@
 ---
 - hosts: all
   roles:
-     - role: ../../external-roles/gantsign.golang
+     - role: ../external-roles/gantsign.golang
        golang_gopath: '{{ my.tools.golang.path }}'
        golang_version: '{{ my.tools.golang.version }}'
        golang_redis_sha256sum: '{{ my.tools.golang.sha256sum }}'

@@ -28,7 +28,6 @@ my:
     rvm: false
     intellij: false 
     docker: false 
-    pcloud: false
     google_cloud_sdk: false
     redis: false
     postman: false
@@ -44,6 +43,7 @@ my:
     htop: false
     keepassxc: false
     virtualbox: false
+    pcloud: false
 
   tools:
     ohmyzsh:
@@ -109,4 +109,5 @@ my:
     intellij:
       version: '2020.2.4'
       edition: ultimate # ultimate or community
+      # You can get the sha256 at this link https://confluence.jetbrains.com/display/IDEADEV/Latest+builds or at external_roles/gantsign.intellij/vars/versions
       sha256: 'd1d0b8300a958116acdb1fde4514ca27d64e329375a2c0402c4eda18c0e18672'

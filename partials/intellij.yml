@@ -2,7 +2,7 @@
 - hosts: all
 
   roles:
-    - role: ../../../external-roles/gantsign.intellij
+    - role: ../external-roles/gantsign.intellij
       intellij_edition: '{{ my.tools.intellij.edition }}'
       intellij_version: '{{ my.tools.intellij.version }}'
       intellij_redis_sha256sum: '{{ my.tools.intellij.sha256 }}'

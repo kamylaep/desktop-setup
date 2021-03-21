@@ -34,7 +34,7 @@
   
       - name: Exporting POSTMAN and add to PATH
         template:
-          src: ../../templates/init.sh.j2
+          src: ../templates/init.sh.j2
           dest: /etc/profile.d/robo3t.sh
           backup: yes
           owner: root
@@ -44,7 +44,7 @@
   
       - name: Exporting POSTMAN menu launcher
         template:
-          src: ../../templates/app.desktop.j2
+          src: ../templates/app.desktop.j2
           dest: /usr/share/applications/postman.desktop
           backup: yes
           owner: root

@@ -2,7 +2,7 @@
 - hosts: all
 
   roles:
-    - role: ../../external-roles/gantsign.oh-my-zsh
+    - role: ../external-roles/gantsign.oh-my-zsh
       users:
         - username: '{{ my.data.username }}'
           oh_my_zsh:

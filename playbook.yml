@@ -1,104 +1,104 @@
 ---
-- import_playbook: partials/config/variables-validation.yml
+- import_playbook: partials/variables-validation.yml
 
-- import_playbook: partials/personal/sshkey.yml
+- import_playbook: partials/sshkey.yml
   when: my.playbooks.sshkey | bool
 
-- import_playbook: partials/tools/ssh.yml
+- import_playbook: partials/ssh.yml
   when: my.playbooks.ssh | bool
 
-- import_playbook: partials/dev/editors/vscode.yml
+- import_playbook: partials/vscode.yml
   when: my.playbooks.vscode | bool
 
-- import_playbook: partials/shell/terminator.yml
+- import_playbook: partials/terminator.yml
   when: my.playbooks.terminator | bool
 
-- import_playbook: partials/shell/zsh.yml
+- import_playbook: partials/zsh.yml
   when: my.playbooks.zsh | bool or my.playbooks.ohmyzsh | bool
 
-- import_playbook: partials/shell/oh-my-zsh.yml
+- import_playbook: partials/oh-my-zsh.yml
   when: my.playbooks.ohmyzsh | bool or my.playbooks.zsh | bool
 
-- import_playbook: partials/media/spotify.yml
+- import_playbook: partials/spotify.yml
   when: my.playbooks.spotify | bool
 
-- import_playbook: partials/dev/java.yml
+- import_playbook: partials/java.yml
   when: my.playbooks.java | bool or my.playbooks.maven | bool or my.playbooks.intellij | bool
 
-- import_playbook: partials/dev/git.yml
+- import_playbook: partials/git.yml
   when: my.playbooks.git | bool or my.playbooks.gitlfs | bool or my.playbooks.tig | bool
 
-- import_playbook: partials/dev/git-lfs.yml
+- import_playbook: partials/git-lfs.yml
   when: my.playbooks.gitlfs | bool
 
-- import_playbook: partials/dev/tig.yml
+- import_playbook: partials/tig.yml
   when: my.playbooks.tig | bool
 
-- import_playbook: partials/dev/maven.yml
+- import_playbook: partials/maven.yml
   when: my.playbooks.maven | bool or my.playbooks.intellij | bool
   
-- import_playbook: partials/dev/golang.yml
+- import_playbook: partials/golang.yml
   when: my.playbooks.golang | bool or my.playbooks.bazel | bool
   
-- import_playbook: partials/dev/nodejs.yml
+- import_playbook: partials/nodejs.yml
   when: my.playbooks.nodejs | bool
   
-- import_playbook: partials/dev/yarn.yml
+- import_playbook: partials/yarn.yml
   when: my.playbooks.yarn | bool
 
-- import_playbook: partials/dev/bazel.yml
+- import_playbook: partials/bazel.yml
   when: my.playbooks.bazel | bool
 
-- import_playbook: partials/dev/rvm.yml
+- import_playbook: partials/rvm.yml
   when: my.playbooks.rvm | bool
 
-- import_playbook: partials/dev/ides/intellij.yml
+- import_playbook: partials/intellij.yml
   when: my.playbooks.intellij | bool
 
-- import_playbook: partials/dev/docker.yml
+- import_playbook: partials/docker.yml
   when: my.playbooks.docker | bool
 
-- import_playbook: partials/tools/pcloud.yml
+- import_playbook: partials/pcloud.yml
   when: my.playbooks.pcloud | bool
 
-- import_playbook: partials/dev/google-cloud-sdk.yml
+- import_playbook: partials/google-cloud-sdk.yml
   when: my.playbooks.google_cloud_sdk | bool
 
-- import_playbook: partials/dev/redis.yml
+- import_playbook: partials/redis.yml
   when: my.playbooks.redis | bool
 
-- import_playbook: partials/tools/postman.yml
+- import_playbook: partials/postman.yml
   when: my.playbooks.postman | bool
 
-- import_playbook: partials/dev/protobuf.yml
+- import_playbook: partials/protobuf.yml
   when: my.playbooks.protobuf | bool
 
-- import_playbook: partials/tools/zoom.yml
+- import_playbook: partials/zoom.yml
   when: my.playbooks.zoom | bool
 
-- import_playbook: partials/tools/forticlient.yml
+- import_playbook: partials/forticlient.yml
   when: my.playbooks.forticlient | bool
 
-- import_playbook: partials/tools/slack.yml
+- import_playbook: partials/slack.yml
   when: my.playbooks.slack | bool
 
-- import_playbook: partials/tools/beyond-compare.yml
+- import_playbook: partials/beyond-compare.yml
   when: my.playbooks.beyondcompare | bool
 
-- import_playbook: partials/tools/chrome.yml
+- import_playbook: partials/chrome.yml
   when: my.playbooks.chrome | bool
 
-- import_playbook: partials/tools/firefox.yml
+- import_playbook: partials/firefox.yml
   when: my.playbooks.firefox | bool
 
-- import_playbook: partials/media/vlc.yml
+- import_playbook: partials/vlc.yml
   when: my.playbooks.vlc | bool
 
-- import_playbook: partials/tools/flameshot.yml
+- import_playbook: partials/flameshot.yml
   when: my.playbooks.flameshot | bool
 
-- import_playbook: partials/tools/htop.yml
+- import_playbook: partials/htop.yml
   when: my.playbooks.htop | bool
 
-- import_playbook: partials/tools/virtualbox.yml
+- import_playbook: partials/virtualbox.yml
   when: my.playbooks.virtualbox | bool
