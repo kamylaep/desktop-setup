@@ -5,8 +5,6 @@
       users:
         - username: '{{ my.data.username }}'
           visual_studio_code_settings: {
-              'codestats.username': '{{ my.data.username }}',
-              'codestats.apikey': '{{ my.tools.codestats.api_key }}',
               'cSpell.language': 'en,pt,pt_BR',
               'cSpell.diagnosticLevel': 'Warning',
               'editor.minimap.enabled': 'false',
@@ -48,7 +46,6 @@
             - ms-python.python
             - octref.vetur
             - vscjava.vscode-java-pack
-            - riussi.code-stats-vscode
             - streetsidesoftware.code-spell-checker
             - shd101wyy.markdown-preview-enhanced
             - streetsidesoftware.code-spell-checker-portuguese-brazilian

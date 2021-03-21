@@ -2,76 +2,32 @@
 
 Collection of playbooks and roles used to setup a Linux (Ubuntu/Xubuntu/Kubuntu - 20.04) desktop environment.
 
-## Before executing
+## How to use
 
-Go to the [configuration file](group_vars/all.yml) and fill in the required variables. Also, check/uncheck what you want to install.
+- Go to the [configuration file](group_vars/all.yml) and fill in the required variables. For instance:
 
-## How to execute
+```
+fullname: My Full Name
+username: my_name
+email: my_name@gmail.com
+```
 
-```shell script
+- Inside the [configuration file](group_vars/all.yml) you will find all the available tools that you can install. 
+  By default, all of them are set to `false`, change to `true` the ones that you want to install.
+- Run the following script:
+
+```bash
 $ ./setup.sh
 ```
 
-## What can be installed / configured
+The setup script will update your system, install ansible, download the required roles and run all the selected playbooks.
 
-| Tool                                |
-| :---                                |
-| Atom                                |
-| AWS Cli                             |
-| Baobab                              |
-| Bazel                               |
-| Beyond Compare                      |
-| Caja                                |
-| Chromium-browser                    |
-| Docker                              |
-| Docker compose                      |
-| Dropbox                             |
-| Eclipse                             |
-| Expressvpn                          |
-| Firefox                             |
-| Flameshot                           |
-| Forticlient                         |
-| Git                                 |
-| Git-LFS                             |
-| Golang                              |
-| Google Cloud SDK                    |
-| Gitkraken                           |
-| Gradle                              |
-| Htop                                |
-| Intellij                            |
-| Java                                |
-| Kafkatool                           |
-| Keepassxc                           |
-| Lastpass                            |
-| Maven                               |
-| NodeJs                              |
-| NoMachine                           |
-| Oh-my-zsh                           |
-| pCloud                              |
-| Pip3                                |
-| Pipenv                              |
-| Postman                             |
-| Protobuf                            |
-| Redis                               |
-| Redis Desktop Manager               |
-| Remmina                             |
-| Robo 3T                             |
-| RVM (and Ruby)                      |
-| Slack                               |
-| Spotify                             |
-| SSH client/server                   |
-| SSH key (1)                         |
-| Sublime                             |
-| Terminator                          |
-| Tig                                 |
-| Toggl                               |
-| Transmission                        |
-| Vim                                 |
-| Virtualbox                          |
-| Vlc                                 |
-| Vscode                              |
-| Yarn                                |
-| Zoom                                |
-| Zsh                                 |
+## Things you should know
 
-(1) generates a ssh key based on the data contained in the [configuration file](group_vars/all.yml).
+- There are some dependencies between the playbooks, for instance, if you choose to install Intellij, Java also will be 
+  installed. To check all the dependencies, take a look at the [playbook.yml](playbook.yml)
+- The [Intellij playbook](/partials/dev/ides/intellij.yml) is configured to use Java 11, so you should not remove this 
+  Java version from the configuration file.
+- The [Google Cloud SDK playbook](partials/dev/google-cloud-sdk.yml) expects you to use [zsh](http://zsh.sourceforge.net/), 
+  if you don't use it, change the installation command from `--rc-path /home/{{ my.data.username }}/.zshrc` to 
+  `--rc-path /home/{{ my.data.username }}/.bashrc`.

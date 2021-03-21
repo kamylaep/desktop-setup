@@ -7,15 +7,6 @@
 - import_playbook: partials/tools/ssh.yml
   when: my.playbooks.ssh | bool
 
-- import_playbook: partials/tools/lastpass.yml
-  when: my.playbooks.lastpass | bool
-
-- import_playbook: partials/package-manager/packages.yml
-  when: my.playbooks.packages | bool
-
-- import_playbook: partials/package-manager/packages_dpkg.yml
-  when: my.playbooks.packages_dpkg | bool
-
 - import_playbook: partials/dev/editors/vscode.yml
   when: my.playbooks.vscode | bool
 
@@ -27,9 +18,6 @@
 
 - import_playbook: partials/shell/oh-my-zsh.yml
   when: my.playbooks.ohmyzsh | bool or my.playbooks.zsh | bool
-
-- import_playbook: partials/tools/expressvpn.yml
-  when: my.playbooks.expressvpn | bool
 
 - import_playbook: partials/media/spotify.yml
   when: my.playbooks.spotify | bool
@@ -67,14 +55,8 @@
 - import_playbook: partials/dev/ides/intellij.yml
   when: my.playbooks.intellij | bool
 
-- import_playbook: partials/dev/pipenv.yml
-  when: my.playbooks.pipenv | bool
-
 - import_playbook: partials/dev/docker.yml
   when: my.playbooks.docker | bool
-
-- import_playbook: partials/tools/toggl.yml
-  when: my.playbooks.toggl | bool
 
 - import_playbook: partials/tools/pcloud.yml
   when: my.playbooks.pcloud | bool
@@ -85,35 +67,38 @@
 - import_playbook: partials/dev/redis.yml
   when: my.playbooks.redis | bool
 
-- import_playbook: partials/dev/sdkman.yml
-  when: my.playbooks.sdkman | bool
-
 - import_playbook: partials/tools/postman.yml
   when: my.playbooks.postman | bool
-
-- import_playbook: partials/dev/gradle.yml
-  when: my.playbooks.gradle | bool
-  
-- import_playbook: partials/dev/editors/atom.yml
-  when: my.playbooks.atom | bool
-
-- import_playbook: partials/dev/editors/sublime.yml
-  when: my.playbooks.sublime | bool
-
-- import_playbook: partials/dev/ides/eclipse.yml
-  when: my.playbooks.eclipse | bool
 
 - import_playbook: partials/dev/protobuf.yml
   when: my.playbooks.protobuf | bool
 
-- import_playbook: partials/dev/robo3t.yml
-  when: my.playbooks.robo3t | bool
+- import_playbook: partials/tools/zoom.yml
+  when: my.playbooks.zoom | bool
 
-- import_playbook: partials/dev/awscli.yml
-  when: my.playbooks.awscli | bool
+- import_playbook: partials/tools/forticlient.yml
+  when: my.playbooks.forticlient | bool
 
-- import_playbook: partials/dev/redis-desktop-manager.yml
-  when: my.playbooks.redis_desktop_manager | bool
+- import_playbook: partials/tools/slack.yml
+  when: my.playbooks.slack | bool
 
-- import_playbook: partials/dev/kafkatool.yml
-  when: my.playbooks.kafkatool | bool
+- import_playbook: partials/tools/beyond-compare.yml
+  when: my.playbooks.beyondcompare | bool
+
+- import_playbook: partials/tools/chrome.yml
+  when: my.playbooks.chrome | bool
+
+- import_playbook: partials/tools/firefox.yml
+  when: my.playbooks.firefox | bool
+
+- import_playbook: partials/media/vlc.yml
+  when: my.playbooks.vlc | bool
+
+- import_playbook: partials/tools/flameshot.yml
+  when: my.playbooks.flameshot | bool
+
+- import_playbook: partials/tools/htop.yml
+  when: my.playbooks.htop | bool
+
+- import_playbook: partials/tools/virtualbox.yml
+  when: my.playbooks.virtualbox | bool

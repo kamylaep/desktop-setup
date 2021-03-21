@@ -4,7 +4,7 @@
   tasks:
     - name: Adding SPOTIFY repository key
       apt_key:
-        url: https://download.spotify.com/debian/pubkey.gpg
+        url: https://download.spotify.com/debian/pubkey_0D811D58.gpg
       
     - name: Adding SPOTIFY repository
       apt_repository:

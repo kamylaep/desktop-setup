@@ -11,14 +11,10 @@ my:
   playbooks: 
     sshkey: false 
     ssh: false
-    lastpass: false
-    packages: false 
-    packages_dpkg: false
     vscode: false
     terminator: false
     zsh: false
     ohmyzsh: false 
-    expressvpn: false 
     spotify: false
     java: false 
     git: false
@@ -30,199 +26,87 @@ my:
     yarn: false
     bazel: false
     rvm: false
-    intellij: false
-    pipenv: false
+    intellij: false 
     docker: false 
-    toggl: false
     pcloud: false
     google_cloud_sdk: false
     redis: false
-    sdkman: false
     postman: false
-    gradle: false 
-    atom: false
-    sublime: false
-    eclipse: false 
     protobuf: false 
-    robo3t: false 
-    awscli: false
-    redis_desktop_manager: false
-    kafkatool: false
+    zoom: false
+    forticlient: false
+    slack: false
+    beyondcompare: false
+    chrome: false
+    firefox: false
+    vlc: false
+    flameshot: false
+    htop: false
+    keepassxc: false
+    virtualbox: false
 
   tools:
-    lastpass:
-      url: https://download.cloud.lastpass.com/linux/lplinux.tar.bz2
-    codestats: ##### CHANGE ME #####
-      api_key: 
     ohmyzsh:
       theme: frisk
       plugins:
         - gitfast
         - docker
         - docker-compose
-        - heroku
         - helm
         - kubectl
-        - minikube
         - mvn
         - ansible
         - golang
-        - gradle
         - node
-        - npm
-        - npx
-        - pip
-        - pipenv
         - python
         - tig
-        - virtualenv
         - rvm
         - ruby
         - rails
-    expressvpn:
-      version: 2.4.4.19-1
     java: 
       versions:
-        - name: default # DO NOT CHANGE THE NAME, USED BY INTELLIJ
+        - name: 8
           version: '8'
+          default: no
+        - name: 11 
+          version: '11'
           default: yes
-        # - name: latest 
-        #   version: '13'
-        #   default: no
     gitlfs:
-      version: '2.10.0'
+      version: '2.13.2'
     tig:
-      version: '2.5.0'
+      version: '2.5.3'
     maven:
       version: '3.6.3'
     bazel:
       version: '4.0.0'
       sha256: 'sha256:7bee349a626281fc8b8d04a7a0b0358492712377400ab12533aeb39c2eb2b901'
     golang:
-      version: '1.14'
-      sha256sum: '08df79b46b0adf498ea9f320a0f23d6ec59e9003660b4c9c1ce8e5e2c6f823ca'
+      version: '1.16.2'
+      sha256sum: '542e936b19542e62679766194364f45141fde55169db2d8d01046555ca9eb4b8'
       path: '$HOME/workspace-go'
     node:
-      version: '13.x'
+      version: '14.x'
     rvm:
       ruby:
         versions: 
           - ruby
-          - 2.5.7
-          - 2.6.3
-    intellij:
-      version: '2020.1.4'
-      edition: ultimate # ultimate or community: when installing community edition, check if the plugins bellow are supported by this edition
-      sha256: '2f25b1e54a927d8267420cc0f510677df757319e3cad4b3ce75e22a9c07fd11b'
-      default_jdk: '8'
-      style_guide_name: GoogleStyle - Custom
-      style_guide_path: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
-      plugins:
-        - Docker
-        - com.dmarcotte.handlebars
-        - org.intellij.scala
-        - net.codestats.plugin.atom.intellij
-        # - com.arasthel.groovy.override-completion # not working on 2020.1
-        # - InspectorGroovy # not working on 2020.1
-        - MavenRunHelper
-        - com.dubreuia
-        - Lombook Plugin
-        - Key Promoter X
-        - com.yiycf.plugins.mavenDependencyHelper
-        # - com.octogog.idea.bazel-build-formatter # not working on 2020.1
-        # - com.google.idea.bazel.ijwb # not working on 2020.1
-        - tanvd.grazi
-        # The plugins bellow may not work on community edition
-        - org.jetbrains.plugins.ruby
-        - Pythonid
-        - com.jetbrains.plugins.meteor 
-        - Karma 
-        - org.jetbrains.plugins.go 
-        - NodeJS
-      plugins_disabled:
-        - Ant Tracer Plugin
-        - AntSupport
-        - CFML Support
-        - ClearcasePlugin
-        - CloudBees
-        - CloudFoundry
-        - com.intellij.drools
-        - com.intellij.flex
-        - com.intellij.jboss.arquillian
-        - com.intellij.jboss.core
-        - com.intellij.jbpm
-        - com.intellij.seam
-        - com.intellij.seam.pageflow
-        - com.intellij.seam.pages
-        - com.intellij.struts2
-        - com.intellij.tapestry
-        - com.jetbrains.plugins.asp
-        - CVS
-        - DevKit
-        - Geronimo
-        - GlassFish
-        - hg4idea
-        - J2ME
-        - JBoss
-        - JSR45Plugin
-        - OpenShift
-        - org.jetbrains.plugins.javaFX
-        - org.jetbrains.plugins.rest
-        - PerforceDirectPlugin
-        - Resin
-        - StrutsAssistant
-        - Subversion
-        - TFS
-        - Weblogic
-        - WebSphere
-        - ZKM
+          - 2.6.6
     docker_compose:
       version: '1.26.0'
-    toggl:
-      version: '7.5.50'
     pcloud: ## GET THE URL ON THE PCLOUD SITE. THE DOWNLOAD LINK HAS AN EXPIRATION DATE ##
-      url:
+      url: 
     google_cloud_sdk:
-      version: '291.0.0'
+      version: '332.0.0'
       components: pubsub-emulator app-engine-java beta
-    gradle:
-      version: '6.2.2'
-    eclipse:
-      version: '2019-12'
-      edition: 'jee'
-      release: 'R'
     protobuf:
       version: '3.10.0'
-    robo3t:
-      version: '1.3.1'
-    awscli: ##### CHANGE ME #####
-      aws_region: 
-      aws_access_key_id: 
-      aws_secret_access_key: 
-    kafkatool:
-      url: http://www.kafkatool.com/download2/kafkatool.sh
-
-  packages_debian: 
-    - baobab
-    - caja
-    - firefox
-    - flameshot
-    - htop
-    - keepassxc
-    - python3-pip
-    - remmina
-    - transmission
-    - vim
-    - vlc
-    - usb-creator-gtk
-    - virtualbox
-  
-  packages_dpkg:
-    - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    - https://www.scootersoftware.com/bcompare-4.3.6.25063_amd64.deb
-    - https://linux.dropbox.com/packages/ubuntu/dropbox_2020.03.04_amd64.deb
-    - https://download.nomachine.com/download/6.11/Linux/nomachine_6.11.2_1_amd64.deb
-    - https://downloads.slack-edge.com/linux_releases/slack-desktop-4.3.2-amd64.deb
-    - https://release.gitkraken.com/linux/gitkraken-amd64.deb
-    - https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb
-    - https://zoom.us/client/latest/zoom_amd64.deb
+    slack:
+      version: '4.14.0'
+    forticlient:
+      version: '6.4.3.0959'
+    beyondcompare:
+      version: '4.3.7.25118'
+    intellij:
+      version: '2020.2.4'
+      edition: ultimate # ultimate or community
+      sha256: 'd1d0b8300a958116acdb1fde4514ca27d64e329375a2c0402c4eda18c0e18672'

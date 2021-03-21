@@ -1,0 +1,8 @@
+- hosts: all
+  
+  
+  tasks:
+    - name: Installing FLAMESHOT
+      package:
+        name: flameshot
+      become: yes

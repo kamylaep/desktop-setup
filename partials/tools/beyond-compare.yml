@@ -1,0 +1,8 @@
+---
+- hosts: all
+
+  tasks:
+    - name: Installing BEYOND COMPARE
+      apt:
+        deb: "https://www.scootersoftware.com/bcompare-{{ my.tools.beyondcompare.version }}_amd64.deb"
+      become: yes

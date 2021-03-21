@@ -1,8 +1,0 @@
----
-- hosts: all
- 
-  tasks:
-    - name: Installing REDIS DESKTOP MANAGER
-      snap: 
-        name: redis-desktop-manager
-      become: yes

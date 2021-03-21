@@ -1,7 +1,0 @@
----
-- hosts: all
-  roles:
-    - role: ../../../external-roles/gantsign.atom
-      users:
-        - username: "{{ my.data.username }}"
-      

@@ -4,7 +4,6 @@
       - tig_package: "tig-{{ my.tools.tig.version }}"
       - tig_url: "https://github.com/jonas/tig/releases/download/tig-{{ my.tools.tig.version }}/{{ tig_package }}.tar.gz"
       - home_path: "/usr/local"
-      - home_name: "TIG_HOME"
   
     tasks:
       - name: Downloading TIG
@@ -25,12 +24,13 @@
           dest: "/tmp/{{ tig_package }}"
           remote_src: true
      
-      - name: Installing ncurses/ncursesw
+      - name: Installing TIG dependencies
         package:
           name: "{{ item }}"
         with_items:
           - libncurses5-dev
           - libncursesw5-dev
+          - make
         become: yes
         
       - name: Make install TIG

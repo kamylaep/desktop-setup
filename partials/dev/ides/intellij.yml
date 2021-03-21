@@ -6,20 +6,55 @@
       intellij_edition: '{{ my.tools.intellij.edition }}'
       intellij_version: '{{ my.tools.intellij.version }}'
       intellij_redis_sha256sum: '{{ my.tools.intellij.sha256 }}'
-      intellij_default_jdk_home: '{{ ansible_local.java_default.general.home }}'
+      intellij_default_jdk_home: '{{ ansible_local.java_11.general.home }}'
       intellij_default_maven_home: '{{ ansible_local.maven.general.home }}'
       users:
         - username: '{{ my.data.username }}'
           intellij_jdks: 
+            - name: '11'
+              home: '{{ ansible_local.java_11.general.home }}'
             - name: '8'
-              home: '{{ ansible_local.java_default.general.home }}'
-            # - name: '13'
-            #   home: '{{ ansible_local.java_latest.general.home }}'
-          intellij_default_jdk: '{{ my.tools.intellij.default_jdk }}'
-          intellij_plugins: '{{ my.tools.intellij.plugins }}'
-          intellij_disabled_plugins: '{{ my.tools.intellij.plugins_disabled }}'
+              home: '{{ ansible_local.java_8.general.home }}'
+          intellij_default_jdk: '11'
+          #intellij_plugins: '{{ my.tools.intellij.plugins }}'
+          intellij_disabled_plugins: 
+            - Ant Tracer Plugin
+            - AntSupport
+            - CFML Support
+            - ClearcasePlugin
+            - CloudBees
+            - CloudFoundry
+            - com.intellij.drools
+            - com.intellij.flex
+            - com.intellij.jboss.arquillian
+            - com.intellij.jboss.core
+            - com.intellij.jbpm
+            - com.intellij.seam
+            - com.intellij.seam.pageflow
+            - com.intellij.seam.pages
+            - com.intellij.struts2
+            - com.intellij.tapestry
+            - com.jetbrains.plugins.asp
+            - CVS
+            - DevKit
+            - Geronimo
+            - GlassFish
+            - hg4idea
+            - J2ME
+            - JBoss
+            - JSR45Plugin
+            - OpenShift
+            - org.jetbrains.plugins.javaFX
+            - org.jetbrains.plugins.rest
+            - PerforceDirectPlugin
+            - Resin
+            - StrutsAssistant
+            - Subversion
+            - TFS
+            - Weblogic
+            - WebSphere
+            - ZKM
           intellij_codestyles:
-            - name: '{{ my.tools.intellij.style_guide_name }}'
-              url: '{{ my.tools.intellij.style_guide_path }}'
-          intellij_default_codestyle: '{{ my.tools.intellij.style_guide_name }}'
-            
+            - name: 'GoogleStyle - Custom'
+              url: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
+          intellij_default_codestyle: 'GoogleStyle - Custom'
