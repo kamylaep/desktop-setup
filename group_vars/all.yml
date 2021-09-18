@@ -115,7 +115,15 @@ my:
       default_jdk: '11'
       style_guide_name: 'GoogleStyle - Custom'
       style_guide_path: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
-      #plugins: 
+      plugins: 
+        #- Pythonid
+        #- org.jetbrains.plugins.ruby
+        - org.intellij.scala
+        - net.codestats.plugin.atom.intellij
+        - MavenRunHelper
+        - Key Promoter X
+        - com.yiycf.plugins.mavenDependencyHelper
+        - com.google.idea.bazel.ijwb
       plugins_disabled: 
         - Ant Tracer Plugin
         - AntSupport

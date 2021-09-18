@@ -16,7 +16,7 @@
             - name: '8'
               home: '{{ ansible_local.java_8.general.home }}'
           intellij_default_jdk: '{{ my.tools.intellij.default_jdk }}'
-          #intellij_plugins: '{{ my.tools.intellij.plugins }}'
+          intellij_plugins: '{{ my.tools.intellij.plugins }}'
           intellij_disabled_plugins: '{{ my.tools.intellij.plugins_disabled }}'
           intellij_codestyles:
             - name: '{{ my.tools.intellij.style_guide_name }}'
