@@ -1,5 +1,10 @@
 ---
 - hosts: all
+  vars:
+    theme_fonts_dir: /usr/local/share/fonts/m
+    theme_dir: "/home/{{ my.data.username }}/.oh-my-zsh/custom/themes/powerlevel10k"
+    zshrc_path: "/home/{{ my.data.username }}/.zshrc"
+    p10k_path: "/home/{{ my.data.username }}/.p10k.zsh"
 
   roles:
     - role: ../external-roles/gantsign.oh-my-zsh
@@ -18,4 +23,47 @@
               source "$f" 
           done
       become: yes
-     
+
+    - name: Create theme fonts directory
+      file:
+        path: "{{ theme_fonts_dir }}"
+        state: directory
+      become: yes
+
+    - name: Download theme fonts
+      get_url:
+        url: "https://github.com/romkatv/powerlevel10k-media/raw/master/{{ item }}"
+        dest: "{{ theme_fonts_dir }}"
+      with_items:
+        - "MesloLGS%20NF%20Regular.ttf"
+        - "MesloLGS%20NF%20Bold.ttf"
+        - "MesloLGS%20NF%20Italic.ttf"
+        - "MesloLGS%20NF%20Bold%20Italic.ttf"
+      become: yes
+
+    - name: Create theme directory
+      file:
+        path: "{{ theme_dir }}"
+        state: directory
+      become: yes
+      become_user: '{{ my.data.username }}'
+
+    - name: Download theme
+      git:
+        repo: https://github.com/romkatv/powerlevel10k.git
+        dest: "{{ theme_dir }}"
+      become: yes
+      become_user: '{{ my.data.username }}'
+    
+    - name: Add theme to zshrc
+      blockinfile:
+        path: "{{ zshrc_path }}"
+        block: |
+          # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+          [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+    - name: Copy theme config
+      copy:
+        src: "../templates/p10k.zsh"
+        dest: "{{ p10k_path }}"
+      become: yes

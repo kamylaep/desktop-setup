@@ -10,6 +10,9 @@
 - import_playbook: partials/vscode.yml
   when: my.playbooks.vscode | bool
 
+- import_playbook: partials/git.yml
+  when: my.playbooks.git | bool or my.playbooks.gitlfs | bool or my.playbooks.tig | bool | bool or my.playbooks.ohmyzsh | bool
+
 - import_playbook: partials/terminator.yml
   when: my.playbooks.terminator | bool
 
@@ -25,8 +28,6 @@
 - import_playbook: partials/java.yml
   when: my.playbooks.java | bool or my.playbooks.maven | bool or my.playbooks.intellij | bool
 
-- import_playbook: partials/git.yml
-  when: my.playbooks.git | bool or my.playbooks.gitlfs | bool or my.playbooks.tig | bool
 
 - import_playbook: partials/git-lfs.yml
   when: my.playbooks.gitlfs | bool

@@ -12,12 +12,12 @@ my:
     sshkey: false 
     ssh: false
     vscode: false
+    git: false
     terminator: false
     zsh: false
     ohmyzsh: false 
     spotify: false
     java: false 
-    git: false
     gitlfs: false
     tig: false
     maven: false 
@@ -47,7 +47,7 @@ my:
 
   tools:
     ohmyzsh:
-      theme: frisk
+      theme: "powerlevel10k/powerlevel10k"
       plugins:
         - gitfast
         - docker

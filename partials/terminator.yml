@@ -36,3 +36,5 @@
           [[default]]
             scrollback_infinite = True
             login_shell = True
+            font = MesloLGS NF 10
+            use_system_font = False
