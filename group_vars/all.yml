@@ -159,18 +159,7 @@ my:
         'cSpell.diagnosticLevel': 'Warning',
         'editor.minimap.enabled': 'false',
         'editor.suggestSelection': 'first',
-        'editor.tabSize': '2',
-        'eslint.validate': [
-          {
-            'autoFix': false,
-            'language': 'vue'
-          },
-          {
-            'autoFix': false,
-            'language': 'javascript'
-          }
-        ],
-        'emmet.triggerExpansionOnTab': true,
+        'editor.tabSize': 4,
         'java.configuration.checkProjectSettingsExclusions': false,
         'javascript.preferences.quoteStyle': 'single',
         'prettier.jsxSingleQuote': true,
@@ -182,7 +171,7 @@ my:
           }
         },
         'vsintellicode.modify.editor.suggestSelection': 'automaticallyOverrodeDefaultValue',
-        'workbench.colorTheme': 'Default Light+',
+        'workbench.colorTheme': 'Default Dark+',
         'workbench.editor.enablePreview': false,
         'workbench.startupEditor': 'newUntitledFile',
         'editor.rulers': [80,120]
