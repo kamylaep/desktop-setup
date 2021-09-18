@@ -1,0 +1,25 @@
+---
+- hosts: all
+  vars:
+    tpm_plugin_dir: "/home/{{ my.data.username }}/.tmux/plugins/tpm"
+    tmux_config_path: "/home/{{ my.data.username }}/.tmux.conf"
+
+  tasks:
+    - name: Installing TMUX
+      package:
+        name: tmux
+      become: yes
+
+    - name: Download TMUX tpm plugin
+      git:
+        repo: https://github.com/tmux-plugins/tpm
+        dest: "{{ tpm_plugin_dir }}"
+      become: yes
+      become_user: '{{ my.data.username }}'
+
+    - name: Set TMUX configuration
+      copy:
+        src: "../templates/tmux.conf"
+        dest: "{{ tmux_config_path }}"
+      become: yes
+      become_user: '{{ my.data.username }}'

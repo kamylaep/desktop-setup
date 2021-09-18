@@ -16,6 +16,7 @@ my:
     terminator: false
     zsh: false
     ohmyzsh: false 
+    tmux: false
     spotify: false
     java: false 
     gitlfs: false

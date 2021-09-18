@@ -11,7 +11,7 @@
   when: my.playbooks.vscode | bool
 
 - import_playbook: partials/git.yml
-  when: my.playbooks.git | bool or my.playbooks.gitlfs | bool or my.playbooks.tig | bool | bool or my.playbooks.ohmyzsh | bool
+  when: my.playbooks.git | bool or my.playbooks.gitlfs | bool or my.playbooks.tig | bool | bool or my.playbooks.ohmyzsh | bool or my.playbooks.tmux | bool
 
 - import_playbook: partials/terminator.yml
   when: my.playbooks.terminator | bool
@@ -21,6 +21,9 @@
 
 - import_playbook: partials/oh-my-zsh.yml
   when: my.playbooks.ohmyzsh | bool or my.playbooks.zsh | bool
+
+- import_playbook: partials/tmux.yml
+  when: my.playbooks.tmux | bool 
 
 - import_playbook: partials/spotify.yml
   when: my.playbooks.spotify | bool
