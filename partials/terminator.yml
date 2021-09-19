@@ -19,7 +19,6 @@
         mode: 0755
         recurse: yes
 
-
     - name: Creating TERMINATOR config file
       file:
         path: "{{ terminator_config_file }}"
@@ -29,12 +28,8 @@
         mode: 0755
 
     - name: Configuring TERMINATOR 
-      blockinfile:
-        path: "{{ terminator_config_file }}"
-        block: |
-          [profiles]
-          [[default]]
-            scrollback_infinite = True
-            login_shell = True
-            font = MesloLGS NF 10
-            use_system_font = False
+      copy:
+        src: "../templates/terminator.config"
+        dest: "{{ terminator_config_file }}"
+      become: yes
+      become_user: '{{ my.data.username }}'
