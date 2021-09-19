@@ -11,7 +11,7 @@
       users:
         - username: '{{ my.data.username }}'
           oh_my_zsh:
-            theme: '{{ my.tools.ohmyzsh.theme }}'
+            theme: '{{ my.tools.ohmyzsh.theme.name }}'
             plugins: '{{ my.tools.ohmyzsh.plugins }}'
 
   tasks:
@@ -26,14 +26,14 @@
 
     - name: Create theme fonts directory
       file:
-        path: "{{ theme_fonts_dir }}"
+        path: '{{ theme_fonts_dir }}'
         state: directory
       become: yes
 
     - name: Download theme fonts
       get_url:
         url: "https://github.com/romkatv/powerlevel10k-media/raw/master/{{ item }}"
-        dest: "{{ theme_fonts_dir }}"
+        dest: '{{ theme_fonts_dir }}'
       with_items:
         - "MesloLGS%20NF%20Regular.ttf"
         - "MesloLGS%20NF%20Bold.ttf"
@@ -50,7 +50,7 @@
 
     - name: Download theme
       git:
-        repo: https://github.com/romkatv/powerlevel10k.git
+        repo: {{ my.tools.ohmyzsh.theme.link }}
         dest: "{{ theme_dir }}"
       become: yes
       become_user: '{{ my.data.username }}'

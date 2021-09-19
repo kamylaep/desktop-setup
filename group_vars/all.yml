@@ -48,7 +48,9 @@ my:
 
   tools:
     ohmyzsh:
-      theme: "powerlevel10k/powerlevel10k"
+      theme: 
+        name: "powerlevel10k/powerlevel10k"
+        link: https://github.com/romkatv/powerlevel10k.git
       plugins:
         - gitfast
         - docker
