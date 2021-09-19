@@ -43,15 +43,15 @@
 
     - name: Create theme directory
       file:
-        path: "{{ theme_dir }}"
+        path: '{{ theme_dir }}'
         state: directory
       become: yes
       become_user: '{{ my.data.username }}'
 
     - name: Download theme
       git:
-        repo: {{ my.tools.ohmyzsh.theme.link }}
-        dest: "{{ theme_dir }}"
+        repo: '{{ my.tools.ohmyzsh.theme.link }}'
+        dest: '{{ theme_dir }}'
       become: yes
       become_user: '{{ my.data.username }}'
     
