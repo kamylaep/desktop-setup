@@ -3,6 +3,7 @@
   vars:
     theme_fonts_dir: /usr/local/share/fonts/m
     theme_dir: "/home/{{ my.data.username }}/.oh-my-zsh/custom/themes/powerlevel10k"
+    plugins_dir: "/home/{{ my.data.username }}/.oh-my-zsh/custom/plugins/"
     zshrc_path: "/home/{{ my.data.username }}/.zshrc"
     p10k_path: "/home/{{ my.data.username }}/.p10k.zsh"
 
@@ -68,5 +69,19 @@
       copy:
         src: "../templates/p10k.zsh"
         dest: "{{ p10k_path }}"
+      become: yes
+      become_user: '{{ my.data.username }}'
+
+    - name: Download zsh-syntax-highlighting
+      git:
+        repo: 'https://github.com/zsh-users/zsh-syntax-highlighting.git'
+        dest: '{{ plugins_dir }}/zsh-syntax-highlighting'
+      become: yes
+      become_user: '{{ my.data.username }}'
+    
+    - name: Download zsh-autosuggestions
+      git:
+        repo: 'https://github.com/zsh-users/zsh-autosuggestions'
+        dest: '{{ plugins_dir }}/zsh-autosuggestions'
       become: yes
       become_user: '{{ my.data.username }}'

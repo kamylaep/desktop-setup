@@ -53,19 +53,12 @@ my:
         link: https://github.com/romkatv/powerlevel10k.git
       plugins:
         - gitfast
+        - git
         - docker
         - docker-compose
-        - helm
-        - kubectl
-        - mvn
-        - ansible
-        - golang
-        - node
-        - python
-        - tig
-        - rvm
-        - ruby
-        - rails
+        - zsh-syntax-highlighting
+        - zsh-autosuggestions
+
     java: 
       # Intellij's playbook uses both version, so don't remove them
       versions:
