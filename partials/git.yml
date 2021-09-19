@@ -18,12 +18,6 @@
         name: "user.email"
         value: "{{my.data.email}}"
         scope: global
-
-    - name: Setting pull.rebase
-      git_config:
-        name: "pull.rebase"
-        value: "true"
-        scope: global
       
     - name: Setting mergetool.keepBackup
       git_config:
