@@ -2,7 +2,7 @@
 my:
   data:
     # REQUIRED: used by the git playbook
-    fullname: 
+    fullname: Kamyla Estuqui Parrado
     # REQUIRED: used by atom, vscode, intellij, sshkey and oh-my_zsh playbooks, it must be the same one used to login into your computer
     username: 
     # REQUIRED: used by the git and sshkey playbook
@@ -29,6 +29,7 @@ my:
     rvm: false
     intellij: false 
     docker: false 
+    pcloud: false
     google_cloud_sdk: false
     redis: false
     postman: false
@@ -44,7 +45,6 @@ my:
     htop: false
     keepassxc: false
     virtualbox: false
-    pcloud: false
 
   tools:
     ohmyzsh:
@@ -69,40 +69,40 @@ my:
           version: '11'
           default: yes
     gitlfs:
-      version: '2.13.2'
+      version: '3.0.2'
     tig:
-      version: '2.5.3'
+      version: '2.5.4'
     maven:
       version: '3.8.3'
     bazel:
-      version: '4.0.0'
-      sha256: 'sha256:7bee349a626281fc8b8d04a7a0b0358492712377400ab12533aeb39c2eb2b901'
+      version: '4.2.1'
+      sha256: 'sha256:1a4f3a3ce292307bceeb44f459883859c793436d564b95319aacb8af1f20557c'
     golang:
-      version: '1.16.2'
-      sha256sum: '542e936b19542e62679766194364f45141fde55169db2d8d01046555ca9eb4b8'
+      version: '1.17.3'
+      sha256sum: '550f9845451c0c94be679faf116291e7807a8d78b43149f9506c1b15eb89008c'
       path: '$HOME/workspace-go'
     node:
-      version: '14.x'
+      version: '16.x'
     rvm:
       ruby:
         versions: 
           - ruby
           - 2.6.6
     docker_compose:
-      version: '1.26.0'
+      version: '1.29.2'
     pcloud: ## GET THE URL ON THE PCLOUD SITE. THE DOWNLOAD LINK HAS AN EXPIRATION DATE ##
-      url: 
+      url: https://p-def4.pcloud.com/cBZML0tunZ9jjz8wZZZQa5Qi7Z2ZZ8yLZkZg7ypVZHZSRZtFZtpZ57ZXHZoHZPFZTVZLzZozZhHZ2zZ2HZhAHEXZMe1arWd2igVBF4O28UnB8bib8jAk/pcloud
     google_cloud_sdk:
-      version: '357.0.0'
+      version: '365.0.0'
       components: pubsub-emulator app-engine-java beta
     protobuf:
       version: '3.10.0'
     slack:
-      version: '4.14.0'
+      version: '4.22.0'
     forticlient:
-      version: '6.4.3.0959'
+      version: '7.0.0.0018'
     beyondcompare:
-      version: '4.3.7.25118'
+      version: '4.4.0.25886'
     intellij:
       version: '2021.2.3'
       edition: ultimate # ultimate or community
@@ -193,4 +193,3 @@ my:
         - shd101wyy.markdown-preview-enhanced
         - streetsidesoftware.code-spell-checker-portuguese-brazilian
         - yzhang.markdown-all-in-one
-        - vscoss.vscode-ansible
