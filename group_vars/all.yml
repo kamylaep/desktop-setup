@@ -45,6 +45,9 @@ my:
     htop: false
     keepassxc: false
     virtualbox: false
+    solaar: false
+    python: false
+    jq: false
 
   tools:
     ohmyzsh:

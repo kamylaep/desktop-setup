@@ -106,3 +106,12 @@
 
 - import_playbook: partials/virtualbox.yml
   when: my.playbooks.virtualbox | bool
+
+- import_playbook: partials/solaar.yml
+  when: my.playbooks.solaar | bool
+
+- import_playbook: partials/python.yml
+  when: my.playbooks.python | bool
+
+- import_playbook: partials/jq.yml
+  when: my.playbooks.jq | bool

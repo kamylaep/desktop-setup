@@ -1,0 +1,9 @@
+- hosts: all
+  
+  tasks:
+    - name: Installing PIP
+      package: 
+        name: python3-pip
+      become: yes
+    - name: Installing VIRTUALENV
+      shell: pip3 install --user virtualenv
