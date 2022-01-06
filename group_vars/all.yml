@@ -2,7 +2,7 @@
 my:
   data:
     # REQUIRED: used by the git playbook
-    fullname: Kamyla Estuqui Parrado
+    fullname: 
     # REQUIRED: used by atom, vscode, intellij, sshkey and oh-my_zsh playbooks, it must be the same one used to login into your computer
     username: 
     # REQUIRED: used by the git and sshkey playbook
@@ -94,7 +94,7 @@ my:
     docker_compose:
       version: '1.29.2'
     pcloud: ## GET THE URL ON THE PCLOUD SITE. THE DOWNLOAD LINK HAS AN EXPIRATION DATE ##
-      url: https://p-def4.pcloud.com/cBZML0tunZ9jjz8wZZZQa5Qi7Z2ZZ8yLZkZg7ypVZHZSRZtFZtpZ57ZXHZoHZPFZTVZLzZozZhHZ2zZ2HZhAHEXZMe1arWd2igVBF4O28UnB8bib8jAk/pcloud
+      url: 
     google_cloud_sdk:
       version: '365.0.0'
       components: pubsub-emulator app-engine-java beta
