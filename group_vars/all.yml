@@ -107,10 +107,10 @@ my:
     beyondcompare:
       version: '4.4.0.25886'
     intellij:
-      version: '2021.2.3'
+      version: '2021.3.3'
       edition: ultimate # ultimate or community
       # You can get the sha256 at this link https://confluence.jetbrains.com/display/IDEADEV/Latest+builds or at external_roles/gantsign.intellij/vars/versions
-      sha256: '16929fd22b84b400d0b9e24fd356dd2e7a614511a2d779ee37082c90df179c25'
+      sha256: 'cdf65a9900f4436da5306ad2eb27f2b32346b3d56e8f07aac6815b402b1d6c99'
       default_jdk: '11'
       style_guide_name: 'GoogleStyle - Custom'
       style_guide_path: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
