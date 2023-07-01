@@ -11,6 +11,8 @@
       users:
         - username: '{{ my.data.username }}'
           intellij_jdks: 
+            - name: '17'
+              home: '{{ ansible_local.java_17.general.home }}'
             - name: '11'
               home: '{{ ansible_local.java_11.general.home }}'
             - name: '8'
