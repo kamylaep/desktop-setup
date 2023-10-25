@@ -118,7 +118,6 @@ my:
       style_guide_path: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
       plugins: 
         - org.intellij.scala
-        - net.codestats.plugin.atom.intellij
         - MavenRunHelper
         - com.yiycf.plugins.mavenDependencyHelper
       plugins_disabled: 
