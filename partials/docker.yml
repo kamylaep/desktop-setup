@@ -47,6 +47,7 @@
         - 'docker-ce'
         - 'docker-ce-cli'
         - 'containerd.io'
+        - 'docker-compose-plugin'
 
     - name: Creating docker group
       group:
@@ -58,9 +59,3 @@
         name: "{{ my.data.username }}"
         groups: "{{ docker_group }}"
         append: yes
-
-    - name: Installing DOCKER-COMPOSE
-      get_url:
-        url: 'https://github.com/docker/compose/releases/download/{{ my.tools.docker_compose.version }}/docker-compose-{{ ansible_system }}-{{ ansible_machine }}'
-        dest: /usr/local/bin/docker-compose
-        mode: '+x'

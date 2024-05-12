@@ -1,8 +1,0 @@
----
-- hosts: all
-
-  tasks:
-    - name: Installing SLACK
-      apt:
-        deb: "https://downloads.slack-edge.com/releases/linux/{{ my.tools.slack.version }}/prod/x64/slack-desktop-{{ my.tools.slack.version }}-amd64.deb" 
-      become: yes

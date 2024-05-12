@@ -1,7 +1,0 @@
----
-- hosts: all
-
-  roles: 
-    - role: ../external-roles/geerlingguy.nodejs
-      nodejs_version: '{{ my.tools.node.version }}'
-      become: yes

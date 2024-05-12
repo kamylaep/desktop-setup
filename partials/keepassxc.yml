@@ -1,7 +1,0 @@
-- hosts: all
-  
-  tasks:
-    - name: Installing KEEPASS
-      package:
-        name: keepassxc
-      become: yes

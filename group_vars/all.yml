@@ -19,31 +19,19 @@ my:
     tmux: false
     spotify: false
     java: false 
-    gitlfs: false
     tig: false
     maven: false 
-    golang: false 
-    nodejs: false 
-    yarn: false
-    bazel: false
-    rvm: false
+    golang: false
     intellij: false 
-    docker: false 
+    docker: true 
     pcloud: false
-    google_cloud_sdk: false
-    redis: false
     postman: false
-    protobuf: false 
-    zoom: false
-    forticlient: false
-    slack: false
     beyondcompare: false
     chrome: false
     firefox: false
     vlc: false
     flameshot: false
     htop: false
-    keepassxc: false
     virtualbox: false
     solaar: false
     python: false
@@ -71,49 +59,28 @@ my:
         - name: 11 
           version: '11'
           default: no
-        - name: 17 
-          version: '17'
+        - name: 21 
+          version: '21'
           default: yes
-    gitlfs:
-      version: '3.3.0'
     tig:
       version: '2.5.4'
     maven:
       version: '3.9.1'
-    bazel:
-      version: '4.2.1'
-      sha256: 'sha256:1a4f3a3ce292307bceeb44f459883859c793436d564b95319aacb8af1f20557c'
     golang:
       version: '1.20.5'
       sha256sum: 'd7ec48cde0d3d2be2c69203bc3e0a44de8660b9c09a6e85c4732a3f7dc442612'
       path: '$HOME/workspace-go'
-    node:
-      version: '16.x'
-    rvm:
-      ruby:
-        versions: 
-          - ruby
-          - 2.6.6
     docker_compose:
-      version: '1.29.2'
+      version: 'v2,26,1'
     pcloud: ## GET THE URL ON THE PCLOUD SITE. THE DOWNLOAD LINK HAS AN EXPIRATION DATE ##
-      url: 
-    google_cloud_sdk:
-      version: '365.0.0'
-      components: pubsub-emulator app-engine-java beta
-    protobuf:
-      version: '3.10.0'
-    slack:
-      version: '4.22.0'
-    forticlient:
-      version: '7.0.0.0018'
+      url: https://p-def7.pcloud.com/cBZQGMwxUZhuVWap7ZZZ8yzG7kZ2ZZ8yLZkZ5hhxVZcLZCFZbHZvRZVFZtFZwLZ1FZgRZTHZF4ZSLZRQZMRZ0AMJ0ZtRjmoDnPl1p7JO8oDQposLk2aWDX/pcloud
     beyondcompare:
-      version: '4.4.6.27483'
+      version: '4.4.7.28397'
     intellij:
-      version: '2023.2.4'
+      version: '2024.1.1'
       edition: community # ultimate or community
-      sha256: '6c05b527a5c762e7247e302541f712d005e1f8bd9ca8b03d52475dc9aef6afe2'
-      default_jdk: '17'
+      sha256: '4d4221630c4d1dcb9f198370f82d9364014a4a624684ad8b3958be9f01eb656a'
+      default_jdk: '21'
       style_guide_name: 'GoogleStyle - Custom'
       style_guide_path: 'https://raw.githubusercontent.com/kamylaep/code-style/master/intellij-java-google-style-custom.xml'
       plugins: 
@@ -161,10 +128,10 @@ my:
       settings: {
         'cSpell.language': 'en,pt,pt_BR',
         'cSpell.diagnosticLevel': 'Warning',
-        'editor.minimap.enabled': 'false',
+        'editor.minimap.enabled': 'true',
         'editor.suggestSelection': 'first',
         'editor.tabSize': 4,
-        'java.configuration.checkProjectSettingsExclusions': false,
+        'java.configuration.checkProjectSettingsExclusions': true,
         'javascript.preferences.quoteStyle': 'single',
         'prettier.jsxSingleQuote': true,
         'prettier.singleQuote': true,
@@ -176,7 +143,7 @@ my:
         },
         'vsintellicode.modify.editor.suggestSelection': 'automaticallyOverrodeDefaultValue',
         'workbench.colorTheme': 'Default Dark+',
-        'workbench.editor.enablePreview': false,
+        'workbench.editor.enablePreview': true,
         'workbench.startupEditor': 'newUntitledFile',
         'editor.rulers': [80,120]
       }
@@ -193,3 +160,5 @@ my:
         - shd101wyy.markdown-preview-enhanced
         - streetsidesoftware.code-spell-checker-portuguese-brazilian
         - yzhang.markdown-all-in-one
+        - betterthantomorrow.calva-spritz
+

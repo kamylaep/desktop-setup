@@ -11,7 +11,7 @@
   when: my.playbooks.vscode | bool
 
 - import_playbook: partials/git.yml
-  when: my.playbooks.git | bool or my.playbooks.gitlfs | bool or my.playbooks.tig | bool | bool or my.playbooks.ohmyzsh | bool or my.playbooks.tmux | bool
+  when: my.playbooks.git | bool or my.playbooks.tig | bool | bool or my.playbooks.ohmyzsh | bool or my.playbooks.tmux | bool
 
 - import_playbook: partials/terminator.yml
   when: my.playbooks.terminator | bool
@@ -31,10 +31,6 @@
 - import_playbook: partials/java.yml
   when: my.playbooks.java | bool or my.playbooks.maven | bool or my.playbooks.intellij | bool
 
-
-- import_playbook: partials/git-lfs.yml
-  when: my.playbooks.gitlfs | bool
-
 - import_playbook: partials/tig.yml
   when: my.playbooks.tig | bool
 
@@ -42,19 +38,7 @@
   when: my.playbooks.maven | bool or my.playbooks.intellij | bool
   
 - import_playbook: partials/golang.yml
-  when: my.playbooks.golang | bool or my.playbooks.bazel | bool
-  
-- import_playbook: partials/nodejs.yml
-  when: my.playbooks.nodejs | bool
-  
-- import_playbook: partials/yarn.yml
-  when: my.playbooks.yarn | bool
-
-- import_playbook: partials/bazel.yml
-  when: my.playbooks.bazel | bool
-
-- import_playbook: partials/rvm.yml
-  when: my.playbooks.rvm | bool
+  when: my.playbooks.golang | bool
 
 - import_playbook: partials/intellij.yml
   when: my.playbooks.intellij | bool
@@ -65,26 +49,8 @@
 - import_playbook: partials/pcloud.yml
   when: my.playbooks.pcloud | bool
 
-- import_playbook: partials/google-cloud-sdk.yml
-  when: my.playbooks.google_cloud_sdk | bool
-
-- import_playbook: partials/redis.yml
-  when: my.playbooks.redis | bool
-
 - import_playbook: partials/postman.yml
   when: my.playbooks.postman | bool
-
-- import_playbook: partials/protobuf.yml
-  when: my.playbooks.protobuf | bool
-
-- import_playbook: partials/zoom.yml
-  when: my.playbooks.zoom | bool
-
-- import_playbook: partials/forticlient.yml
-  when: my.playbooks.forticlient | bool
-
-- import_playbook: partials/slack.yml
-  when: my.playbooks.slack | bool
 
 - import_playbook: partials/beyond-compare.yml
   when: my.playbooks.beyondcompare | bool
